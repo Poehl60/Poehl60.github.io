@@ -498,6 +498,11 @@ def page(path, title, desc, body, crumb="", jsonld=None, noindex=False):
 <meta property="og:description" content="{html.escape(desc)}">
 <meta property="og:url" content="{canonical}">
 <meta property="og:site_name" content="{SITE_NAME}">
+<meta property="og:image" content="{OG_IMAGE}">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{html.escape(title)}">
+<meta name="twitter:description" content="{html.escape(desc)}">
+<link rel="icon" href="{FAVICON}">
 <style>{CSS}</style>
 {ld}
 </head>
