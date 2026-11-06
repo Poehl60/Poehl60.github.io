@@ -31,7 +31,15 @@ OUT = os.path.join(ROOT, "docs")
 SITE_NAME = "Coherence Framework"
 BASE = "/Framework"                       # GitHub Pages project path
 ORIGIN = "https://poehl60.github.io"
+
+# Google Search Console ownership proof [analyst 2026-11-06].
+# Emitted as a <meta> tag on every page, so verification survives rebuilds.
+# It is a public identifier, not a secret. Set to "" to drop it.
 GOOGLE_VERIFY = "5DBmhSs7USDDh5AoE4rybj9K0il1noBed9oylSnOzrI"
+
+# Canonical public home of the source. Linked from every page footer so the
+# site and the repo point at each other (helps discovery both directions).
+REPO_URL = "https://github.com/Poehl60/Framework"
 
 EXCLUDE_REASON = "analyst_policy is bias-labeled personal political position, not kit reading"
 
@@ -510,6 +518,11 @@ def page(path, title, desc, body, crumb="", jsonld=None, noindex=False):
 </main>
 <footer>
 <a href="{href('')}">{SITE_NAME}</a> — gift / forkable, CC0. Method travels; brand does not.
+<br>
+<a href="{REPO_URL}" rel="noopener">Source &amp; .txt kit on GitHub</a>
+ · <a href="{REPO_URL}#readme" rel="noopener">README</a>
+ · <a href="{REPO_URL}/blob/main/INDEX.md" rel="noopener">INDEX.md</a>
+ · <a href="{href('versions.html')}">What is published</a>
 </footer>
 </body>
 </html>
@@ -839,6 +852,8 @@ def main():
          "<span class=\"k\">${x[2]}</span></li>`).join('');}q.addEventListener('input',draw);draw();"
          "</script>",
          crumb_html([("Home", ""), ("Search", None)]), noindex=True)
+    # noindex pages are deliberately NOT sitemapped — a sitemap entry for a
+    # noindex URL is a contradiction Search Console reports as an error.
 
     # ---- VERSIONS.md -> versions.html
     vers_body = "<h1>Versions</h1>"
