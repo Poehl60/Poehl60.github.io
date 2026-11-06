@@ -560,6 +560,9 @@ def crumb_html(parts):
 # ---------------------------------------------------------------- build
 
 def reset_out():
+    og_src = os.path.join(ROOT, "og.png")
+if os.path.isfile(og_src):
+    shutil.copy2(og_src, os.path.join(OUT, "og.png"))
     if os.path.isdir(OUT):
         for attempt in range(3):
             try:
