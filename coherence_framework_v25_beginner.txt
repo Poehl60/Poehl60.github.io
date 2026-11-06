@@ -1,0 +1,445 @@
+COHERENCE FRAMEWORK v25 -- TERMINOLOGY [BEGINNER]
+============================================================================================================================================
+FORMAT RULES [operative] -- same as theory file.
+ Line width: 140 chars max [desktop]. Separators = 140-wide.
+ Legacy 108 was phone-era -- rewrap on touch, not bulk pass.
+============================================================================================================================================
+Onboarding only. Assumes no prior framework vocabulary.
+This file teaches the words. Main kit holds proof, cases, and full depth.
+Not confirmed theory by itself -- every claim below is a pointer into the
+kit, not a substitute for Section One definitions.
+Critical next: order_truth.txt [L1 spine body]; kit read order: READER GUIDE below.
+ Other tension units stay in theory / applied.
+Full definitions: coherence_framework_v25_theory.txt Section One.
+Full glossary: coherence_framework_v25_applied_science.txt QUICK REFERENCE GLOSSARY.
+============================================================================================================================================
+
+WHAT THIS FRAMEWORK IS [plain]
+--------------------------------------------------------------------------------------------------------------------------------------------
+ A reading system for whether a person, group, institution, or design
+ generates more than it consumes [True Coherence] or consumes while
+ looking like it generates [False Coherence].
+ It scores capacities [can it correct? is the meter honest?] and names
+ extraction mechanisms [tricks that make prey help consume itself].
+ It is not a moral sermon, a political party, or a vibes checklist.
+ Letter codes appear everywhere in the kit. Rule: first mention in a
+ topic is FULL NAME [ABBREV]; short form after. Canonical list: theory
+ NAME COMPRESSION POLICY. This file expands every code once below.
+
+KIT FILE MAP [v25 -- where things live]
+--------------------------------------------------------------------------------------------------------------------------------------------
+ coherence_framework_v25_beginner.txt This file [L0 start here]
+ Personal/coherence_framework_v25_ai_persona.txt Session agent stance [values + boot; not kit truth]
+ coherence_framework_v25_order_truth.txt L1 band spine [legacy critical #2]
+ coherence_framework_v25_disorder_forms.txt L2 guide + L5 FORM catalog [critical #3]
+ coherence_framework_v25_order_forms.txt L2 guide + L5 FORM catalog [critical #4]
+ coherence_framework_v25_theory.txt L3-L4 foundation + depth [logos]
+ coherence_framework_v25_sophist.txt L3b pathos fundamentals [optional]
+ coherence_framework_v25_applied.txt L6 politics, science, glossary
+ coherence_framework_v25_applied_s6.txt L6 politics in action
+ coherence_framework_v25_applied_science.txt L6 science appendix [Section Seven]
+ coherence_framework_v25_cases.txt L7 case hub [redirect only]
+ coherence_framework_v25_cases_real.txt L7 REAL case library
+ coherence_framework_v25_cases_fiction.txt L7 fiction case library
+ Personal/coherence_framework_v25_ai_long_term.txt Staging / open research [was wip]
+ coherence_framework_v25_analyst_policy.txt L8 analyst policy [bias labeled]
+ coherence_framework_v25_transmission.txt L8 spread / deposit / paste protocol
+ cf_grep.txt nav line maps [L2+]
+
+READER GUIDE [kit -- canonical]
+--------------------------------------------------------------------------------------------------------------------------------------------
+ **Canonical home:** this file only [kit read order L0-L8 -- do not duplicate in
+ order_truth or other kit files; form libraries keep local READER GUIDE for forms].
+ **Sort key:** lowest specificity first [L0 -> L8]. Grep slices when tier says
+ spine, guide pack, or on assignment. cf_grep.txt KIT FILES BY DENSITY mirror.
+ Legacy critical #2-4 = L1-L2 filenames; numeric label ≠ density rank.
+ **Basic four [required orientation -- stop here unless you choose more]:**
+ [1] beginner.txt [whole]
+ [2] order_truth.txt [L1 spine -- topic list below]
+ [3] disorder_forms.txt [UNIVERSAL LINK through READER GUIDE + PROVE EVIL +
+ GUIDE -- IDEOLOGY-ACTIVATION-BAD plain rule -- not FORM-- bodies]
+ [4] order_forms.txt [UNIVERSAL LINK through READER GUIDE + PROVE ORDER --
+ not FORM-- bodies]
+ **Beyond basic four [elective -- read what you need]:** theory [logos]; sophist
+ [pathos]; applied / cases / analyst_policy / transmission / Personal/ -- no fixed order.
+ **L1 spine [order_truth topic order]:** ORDER TOWARD TRUTH -> METHOD OF TRUTH ->
+ ETHOS [analyst pin plain] -> THREE-POINT AXIS -> ANALYST AXIS DOCTRINE
+ [posture table optional] -> DEME GATE [falsifiable test] ->
+ DISORDER INVARIANT -> STRICT ORDER DEFINITION -> STRICT DISORDER DEFINITION.
+ **NATION DESK PORTABLES** [order_truth pointer block] -- eight analyst-policy T3
+ portables, not spine body [home: analyst_policy DIVISION NATION DESK PORTABLES].
+ **L1 second division [theory appendix]:** EPISTEMIC SITUATEDNESS -> CLAIM-TYPE
+ VOCABULARY -> CLAIM BANDS -> TWIN MISTAKES [theory SEC:EPISTEMIC_SITUATEDNESS;
+ read when routing a claim to a test].
+ **L1 excluded [L4 theory -- grep only]:** ORDER TRUTH REFERENCE BANK; METHOD OF
+ TRUTH FAILURE MODES BANK. Hard-mode / functional posture -> REFERENCE BANK.
+ **Full kit [L3-L8]:**
+ [L3] theory.txt Section One + Section Four READING PROCEDURE steps 1-5 [logos]
+ [L3b] sophist.txt PATHOS FUNDAMENTALS [optional; pathos register + specimens]
+ [L3c] theory.txt EPISTEMIC SITUATEDNESS [optional; intersubjective band /
+ objective-subjective map; not required for basic four]
+ [L4] theory.txt Sections Two-Six; METHOD OF TRUTH FAILURE MODES BANK; ORDER
+ TRUTH REFERENCE BANK; STRICT LOGIC APPENDIX [optional]
+ [L5] disorder_forms.txt + order_forms.txt FORM-- bodies [grep name; not linear]
+ [L6] applied.txt, applied_s6.txt, applied_science.txt [sections on assignment]
+ [L7] cases.txt [hub], cases_real.txt, cases_fiction.txt GUIDE then [CASE:NAME]
+ [L8] analyst_policy.txt, transmission.txt
+ nav cf_grep.txt parallel from L2+ [grep -> sed slices]
+ **Public path:** L0 -> L8; excludes Personal/. Deposit minimum [transmission]:
+ L0 + L1 spine + L6 applied glossary slice + L7 cases_real GUIDE or CASE subset
+ INDEX.md at repo root.
+ **Promote rule:** new instance detail at densest tier that fits [L4+ specimens]
+ never inflate L0-L2. Mis-tier -> move down-stack or one-line pointer.
+ **Density rule:** early tier = less specific; L4-L8 dense OK. Spine reads like a
+ case library -> wrong tier [compress, move, grep-only reference].
+
+PLAIN VOCABULARY [used before codes]
+--------------------------------------------------------------------------------------------------------------------------------------------
+ System: whatever you are reading [person, org, state, tool, design].
+ Axis: the orientation the system steers by [values, purpose, identity].
+ Substrate: what the system runs on [people, trust, attention, land,
+ money, ecology] -- the fuel, not the slogan.
+ Meter / measurement surface: how the system [or you] scores success.
+ Deployer: who built or aims the mechanism.
+ Capture: the meter, axis, or boundary is owned or bent by an extractor.
+ Extraction: trickery where the prey cooperates with its own consumption
+ [distinct from open competition or visible predation -- below].
+ Weapon / mechanism: a named extraction pattern [not always literal force].
+ Stack: several mechanisms co-deployed so each amplifies the others.
+ Correction: detecting deviation and fixing it toward a real target.
+ WIP: work-in-progress staging -- not kit truth until promoted.
+
+EXTRACTION VS HONEST HARM [theory Section Two -- plain]
+--------------------------------------------------------------------------------------------------------------------------------------------
+ Cooperation: both sides gain inside the relationship.
+ Competition: both know the terms; zero-sum declared.
+ Predation: honest violence; boundary visible; kills mostly.
+ Extraction: trickery; prey cooperates with its own consumption.
+
+IDEOLOGY 1% AND 99% [plain -- not all creeds; bad run tell]
+--------------------------------------------------------------------------------------------------------------------------------------------
+ Many fights start from a **real row** [one victim, one injustice, one hard edge case --
+ the **1%**]. That row can be **true** and still **not** justify everything sold with it.
+ **Bad ideology run [not a good thing]:** use the true **1%** to **force the 99%** --
+ whole package, whole category, whole jersey, perpetual outrage, valves [HR, law, platform,
+ school] that voters would not pass if argued openly.
+ **Good repair [classical-lib shape]:** fix the **named row** with a **pin** [what changes,
+ who pays, when it ends]; do **not** merge guilt-by-bundle. Oppose the stack ≠ oppose the
+ victim.
+ **Tell:** debate keeps returning to the hardest story; the **typical case at scale** [what
+ law and money actually hit] never gets argued on its own terms.
+ **Detail:** disorder_forms **GUIDE -- IDEOLOGY-ACTIVATION-BAD** [ONE PASS]; theory **EDGE
+ CASE UNIVERSALIZATION** [hard case genuine -- universalization is the weapon].
+
+THREE CYCLES [how to read any system]
+--------------------------------------------------------------------------------------------------------------------------------------------
+ C1 GENERATIVE CYCLE [GC]: does the system produce what it needs to keep
+ running? [fuel, trust, competence, replacements]
+ C2 MEASUREMENT: MEASUREMENT INTEGRITY [MI] + CAUSAL LEGIBILITY [CL] --
+ can it tell what is true? is the meter captured? can harm be traced?
+ C3 TIME: TRANSMISSION SELECTIVITY [TS] + SUCCESSOR AUTONOMY [SA] --
+ what crosses to the next generation, and can successors revise it?
+ Application layer [after cycles]: theory SCALE LADDER [minimum stacks +
+ tension units]; RECOVERY TRAJECTORIES [intervention by interference type].
+
+CORE QUALITIES [FULL NAME [ABBREV] -- learn these first]
+--------------------------------------------------------------------------------------------------------------------------------------------
+ GENUINE AXIS [GA]: real internal orientation, examined -- not installed
+ slogans taken as self.
+ CORRECTION CAPACITY [CC]: can wrongness get detected and fixed?
+ MEASUREMENT INTEGRITY [MI]: is the scoreboard honest, or owned by the
+ extractor?
+ BOUNDARY INTEGRITY [BI]: who counts inside vs outside the measured unit?
+ CAUSAL LEGIBILITY [CL]: can you trace harm to the deployer?
+ REFERENCE INTEGRITY [RI]: is the calibration standard itself honest?
+ [surface can look fine while locked to a false baseline]
+ TRANSMISSION SELECTIVITY [TS]: what survives transmission across time?
+ SUCCESSOR AUTONOMY [SA]: can the next generation revise what it received?
+ CAUSAL AXIS GROUNDING [CAG]: does the axis match actual outputs?
+ [diagnostic: check outputs / external witnesses before internal
+ axis-audit theater]
+ FORMATION CAPTURE [FC]: axis installed in the formation window before
+ examination can fire [also listed under weapons].
+
+MORE QUALITIES [same stack -- still learn FULL [ABBREV]]
+--------------------------------------------------------------------------------------------------------------------------------------------
+ GENERATIVE CYCLE [GC]: system produces what it depends on to survive.
+ SURPLUS PRODUCTION [SP]: system produces more than it consumes.
+ SURPLUS DISTRIBUTION [SD]: active release of surplus outward.
+ SUBSTRATE REGENERATION [SR]: active restoration of what GC runs on.
+ TENSION MAINTENANCE [TM]: sustains productive tension.
+ Failure mode: Collapse.
+ TENSION DISSOLUTION [TD]: drive toward false resolution.
+ Failure mode: False Harmony.
+ PROPORTIONAL RESPONSE [PR]: correction does not become the next failure.
+ [no short code in NAME COMPRESSION; spelled out in kit]
+
+QUALITY STACK [simple to complex -- same names, reading order]
+--------------------------------------------------------------------------------------------------------------------------------------------
+ GENERATIVE CYCLE → SURPLUS PRODUCTION → CORRECTION CAPACITY →
+ GENUINE AXIS → BOUNDARY INTEGRITY → PROPORTIONAL RESPONSE →
+ MEASUREMENT INTEGRITY → TRANSMISSION SELECTIVITY → CAUSAL LEGIBILITY →
+ SUCCESSOR AUTONOMY → CAUSAL AXIS GROUNDING → SUBSTRATE REGENERATION →
+ SURPLUS DISTRIBUTION → TENSION MAINTENANCE / TENSION DISSOLUTION.
+ Short codes only after you know the full names above.
+
+EXTRACTION MECHANISMS [FULL NAME [ABBREV] -- condensed]
+--------------------------------------------------------------------------------------------------------------------------------------------
+ MEASUREMENT SURFACE CONTROL [MSC]: owns the instrument [hits CL].
+ ENGINEERED CAUSAL DIFFUSION [ECD]: makes the causal chain illegible
+ [hits MI].
+ CORRECTION THEATRE [CT]: performance of correction without function
+ [hits CC].
+ FORMATION CAPTURE [FC]: captures at the formation window [hits SA].
+ EXIT COST CONSTRUCTION [ECC]: raises the cost of leaving [hits GC].
+ IDLE CYCLE DEPRIVATION [ICD]: removes idle time needed to form an axis.
+ BOUNDARY MANIPULATION [BM]: shifts who counts [hits CC / BI].
+ COHERENCE MIMICRY [CM]: appears coherent, is not [hits TS].
+ PROXY CAPTURE [PC]: harvests output of a genuine system [hits SA / CAG].
+ FERTILE LOCK [FL]: locks transmission permanently [hits TS].
+ CALIBRATION STRIP [CS]: locks the reference standard [hits TS / RI].
+ AXIS GESTATION CAPTURE [AGC]: contaminates at formation [hits SA].
+ DEPENDENCY CONSTRUCTION [DC]: requires ongoing supply from deployer
+ [hits GC].
+
+HONEST LIMITS T1-T9 [measurement ceilings -- theory Section Four]
+--------------------------------------------------------------------------------------------------------------------------------------------
+ Not moral failures -- structural ceilings on what a read can resolve.
+ T1 RESOLVABLE: fully measurable from current position.
+ T2 PRE-RESOLUTION: indeterminate until a stress event; named state,
+ not a failed reading. Subtype A = concealment; B = variability.
+ T3 ANALYST BIAS: the instrument cannot calibrate its own axis from
+ inside; declare Low/Medium/High; run an adversarial check.
+ T4 STRUCTURAL OBSCURATION: transfer direction hidden by design
+ better analysis alone cannot pierce the weapon stack.
+ T5 PRE-MEASUREMENT: productive state before a meter exists
+ forcing measurement disrupts the state [flow, rest, skill].
+ T6 OBSERVER EFFECT: measuring changes the system; uncorrectable.
+ T7 FERTILE LOCK: self-sealing capture; internal correction may be
+ structurally impossible -- external contact only.
+ T8 RECURSIVE CLOSURE: observer = instrument = observed; disclosure
+ makes recursion legible but does not remove it.
+ T9 IRRATIONALITY MAINTENANCE: direct correction risks critical
+ internal damage [CID = load-bearing identity/body/axis break]
+ measure, document, act around -- not through.
+ Do not treat T9 as T3 and apply standard correction.
+ T9 SUBTYPES [all still T9]:
+ Identity: admission breaks who you are [civic, diagnostic, role].
+ Somatic: correction would destabilize the body [load-bearing pattern].
+ Ideological: correction feels like axis betrayal not axis fix.
+ Non-reception: read is accurate but receiver cannot absorb it
+ experienced as attack -- gap is not informational.
+ T9 INTERVENTION [when direct correction blocked]:
+ Outcome comparison, historical distance, cost accounting
+ [search T9 SOFT EXPOSURE METHODS in applied Section Five].
+ SELF-CRITICAL vs T9 [close topic -- not the same tool]:
+ Self-critical thought keeps GENUINE AXIS [GA] examined. T9 = admission
+ would cause CID -- go around, not through. Error: demand "be more
+ self-critical" from outside at a T9 load.
+
+HONESTY [theory Section Two -- main epistemic standard]
+--------------------------------------------------------------------------------------------------------------------------------------------
+ Not moral praise or disclosure virtue. Operational standard policy
+ tradeoffs must pass before they count as correction: both sides of the
+ cost ledger on one method. Four tests: symmetric accounting; causal
+ chain for solutions; no purity veto; one measurement method. CORE RULE:
+ price the fix while hiding body count [or the reverse] = dishonest
+ regardless of stated purpose.
+
+SOLUTION VETO [theory Section Two -- named pattern]
+--------------------------------------------------------------------------------------------------------------------------------------------
+ Fix class forbidden as sin or maladaptation while preventable harm from
+ the unfixed problem is tolerated. Veto-holders keep the tool; dead are
+ old, poor, or voiceless. Tell: institution uses the tool for itself while
+ prescribing passive coping for others = confirmed. HONESTY test [3].
+
+NOT HONESTY vs HONEST LIMIT [disambiguation]
+--------------------------------------------------------------------------------------------------------------------------------------------
+ Structural limits are NOT the honesty standard.
+ HONEST LIMITS T1-T9 = measurement ceilings.
+ HONEST LIMIT local = scope humility for targeting.
+ MASS ADOPTION HONEST LIMIT = population adoption ceiling.
+ HONESTY = symmetric cost ledger for policy tradeoffs.
+ HONESTY PENALTY = inverse weapon [punishes disclosure].
+ Do not conflate these words.
+
+EPISTEMIC ROUTING [order_truth METHOD OF TRUTH -- hub]
+--------------------------------------------------------------------------------------------------------------------------------------------
+ **Real** = record/primary wins when they conflict with story.
+ **Theory** = pattern apply when examined; not vibe or authority alone.
+ **Truth** = center axis; Real + Theory serve it -- not the reverse.
+ **Abstract** = secondary pattern borrow only; not truth substitute.
+ **Mid-as-predictor:** read response in exchange [mid] -- often predicts
+ reconstructed start and trajectory end better than origin myth or finale
+ fantasy alone. **Start-anxiety** = genesis/authorship hunt when the live
+ task is how someone shows up now. Full home: order_truth METHOD OF TRUTH.
+
+MASS ADOPTION HONEST LIMIT [theory Section Four -- not a failure]
+--------------------------------------------------------------------------------------------------------------------------------------------
+ Framework blocked from mass adoption by design. Axis analysis
+ unexamined instruments produces defensiveness not correction -- T9
+ non-reception at population scale. Louder or clearer does not close it.
+ Correct scope: Silent Alternative -- outside captured channels; enough
+ genuine-axis instruments to transmit method across generations beats
+ mass vocabulary without methodology.
+ Real risk: capture not rejection -- name travels, tool does not
+ [Coherence Rent, propagation mimicry]. Hold undeliverable reads
+ do not force delivery into non-reception.
+
+CASE DEPTH AND TRACKS [how kit labels evidence]
+--------------------------------------------------------------------------------------------------------------------------------------------
+ S-RATING [case strength -- composite S1-S4 from three axes in theory
+ CASE STRENGTH RATING; full defs theory.txt]:
+ E = evidence type [E1 fiction .. E4 multi-domain real].
+ M = mechanism confirmation [M1 inferred .. M4 controlled comparison].
+ F = falsifiability [F1 none .. F4 tested across domains].
+ S1 illustration | S2 weak/suggestive | S3 confirmed | S4 strong anchor.
+ Fiction library [cases_fiction.txt] has an E-axis cap -- fiction is not
+ a real-world confirmation case; do not promote fiction as REAL.
+
+ REAL case Type lines [cases_real.txt -- v25 operative]:
+ Use S:4, S:3, or S:3 partial on the Type line only -- not S:2 [old label;
+ collided with fiction wording]. S:4 = anchor. S:3 = E3+ M3+ F2+ confirmed bar.
+ S:3 partial = real pin with honest ceiling [thin sources, encounter-dependent
+ music, mapping gap]. Modifiers: partial thin | partial loose. T3 Low/Medium/
+ High = analyst mapping confidence on hot reads -- not the same as S.
+ cases_real GUIDE [CASE:BY_QUALITY] BEST->FLOOR = read order, not a second
+ score. Pointer: cases_real GUIDE block for Type-line rule.
+
+ Track A = mechanism and facts.
+ Track C = advocacy, pundit, or press framing -- specimen, not proof.
+ Section Six = applied political reading with a 10-test battery
+ [file: applied_s6.txt]. Political T1-T10 numbering differs from
+ honest-limits T1-T9 -- search POLITICAL MEASUREMENT PROTOCOL
+ [applied Section Five].
+
+RHYME [kit routing label -- not scoring theory]
+--------------------------------------------------------------------------------------------------------------------------------------------
+ Structural parallel: same geometry, different instance. Cross-ref pointer,
+ not a duplicate CASE or theory block. Common in WIP, analyst notes, and
+ cross-refs [e.g. clinical love rhyme, PRICED ROUTING rhyme].
+ Agent rule tag [SkillWeaver rhyme]: load only the skills or MCP tools the
+ current step needs -- not the full library.
+
+KEY PHRASES [beginner]
+--------------------------------------------------------------------------------------------------------------------------------------------
+ True Coherence: generates more than it consumes.
+ False Coherence: consumes to maintain appearance of generating.
+ Distribution strategy: gives coherence. Extraction mechanism: takes it.
+ Ascending path: hypothesized single sustainable direction [PROVISIONAL].
+ Structural Correctness: correct behavior falsifiable by outputs.
+ Section Two-B: speculative only -- do not use for scoring.
+ IP policy: works 5-10y [10 max]; brand official while in use
+ search Intellectual property in applied file.
+
+TEN OPERATING PINS [L0 digest -- chat 2026-10-13; not scoring bar]
+--------------------------------------------------------------------------------------------------------------------------------------------
+ Onboarding compress only -- pointers into kit; not substitute for Section One
+ or applied structural findings. Analyst operative detail: analyst_policy
+ PRO-OUT POLITY TRADE AND MEMBRANE [chat 2026-10-13].
+ [1] **Net yield at literal border** -- score inside a real membrane [territory +
+ rules], not borderless empire externalization [applied EMPIRE-NODE;
+ ROUTING BOUNDARY MONOPOLY].
+ [2] **Pro-out, not pro-in** -- leaving must be real [people and sub-polities];
+ trap polity = EXIT COST CONSTRUCTION [ECC] at state scale [analyst_policy
+ PRO-OUT POLITY TRADE AND MEMBRANE].
+ [3] **Three bands** -- Order | Disorder [middle] | Chaos; most capture lives in
+ middle, not Order's opposite pole [order_truth THREE-POINT AXIS].
+ [4] **Fix everything with stack** -- full repair ambition is Order-direction when
+ GENUINE AXIS + honest meter + truth-center + long-horizon co-op hold; without
+ stack = costume or chaos medic [order_truth STRICT ORDER DEFINITION].
+ [5] **Short vs long** -- disorder defaults to short-horizon payoff; price now and
+ later on one ledger [order_truth STRICT DISORDER DEFINITION; HONESTY].
+ [6] **Fake Real** -- forged record = REFERENCE INTEGRITY [RI] + MEASUREMENT
+ SURFACE CONTROL [MSC] root poison; priority interrupt when evidenced -- not vibe.
+ [7] **Extraction any size** -- find and stop structured cooperative consumption, or
+ support it by feed/excuse; scale changes tactics not complicity [EXTRACTION VS
+ HONEST HARM above; applied EXTRACTION CYCLE].
+ [8] **Open obvious harm** -- serious proportional correction or hermetic contain
+ [exit, boundary, stop feed]; not ledger stall [theory PROPORTIONAL RESPONSE].
+ [9] **Thin data** -- when pattern fits, A + B → C with stated confidence + one
+ falsifier [case S:3 partial; theory CASE STRENGTH RATING] -- not label spray.
+ [10] **Limits on instrument** -- honest limits T1-T9 bound analyst delivery, not
+ deployer shield; obvious extraction + power to cut feed ≠ T9 costume [theory
+ Section Four HONEST LIMITS].
+ **Trade ≠ central labor bypass:** voluntary exchange across membrane is not strong
+ center + selective porous labor routing for employers [applied NATION MEMBRANE
+ AND IMMIGRATION; WEDGE ISSUE MECHANICS]. Locked union / no secession read:
+ ROUTING BOUNDARY MONOPOLY + EXTRACTOR DEFENSE STACK [applied].
+ Cross-ref: order_truth ANALYST AXIS DOCTRINE [demon register separate];
+ coherence_framework_v25_analyst_policy.txt PRO-OUT POLITY TRADE AND MEMBRANE.
+
+TENSION UNITS [theory SCALE LADDER Part B -- addition filter]
+--------------------------------------------------------------------------------------------------------------------------------------------
+ Qualities score only in tension -- name all three poles first.
+ Tiers: **simple** = 3 definitions; **complex** = 3 simples linked; stack
+ recurses while each grouping stays 3 + measurable. Full home: theory
+ SCALE LADDER Part B [UNIT COMPLEXITY TIERS]. Tower levels [expanded]:
+ L1: GENERATIVE CYCLE [GC] / SURPLUS PRODUCTION [SP] /
+ CORRECTION CAPACITY [CC]
+ L2: MEASUREMENT INTEGRITY [MI] / CAUSAL LEGIBILITY [CL] /
+ REFERENCE INTEGRITY [RI]
+ L3: TRANSMISSION SELECTIVITY [TS] / SUCCESSOR AUTONOMY [SA] /
+ CAUSAL AXIS GROUNDING [CAG]
+ Also L3: TENSION MAINTENANCE [TM] / TENSION DISSOLUTION [TD]
+ L3.5: Recognition / Compatibility / Reciprocity
+ Person instrument: Truth-seeking / Functional / Contact [oscillation,
+ not maximize one]. Stuck functional = compliant drift; no contact =
+ closed loop.
+ Discourse register: Ethos / Pathos / Logos [public persuasion overlay --
+ not tower brick]. Plain: **trust who** / **feel what** / **prove what
+ followed**. Held in tension -- oscillate, do not max any leg. Framework
+ audits **logos-primary** [chain, act parity]; public clip often does not.
+ Ethos = who may speak before content test [jersey, office, credential].
+ Plain analyst pin [authority/power]: order_truth ETHOS [analyst pin plain].
+ Pathos = sympathy, outrage, sacred frame [montage, enemy-definition].
+ Logos = premise → causal reconstruction → act consequence on record.
+ Two common cheats [plain slang -- NOT kit demon-class terminal]:
+ **DEMON MAXXING** -- ethos + pathos cranked, logos absent. Jersey +
+ feelings before chain audit. Rhyme: rally clip, trial fandom, wedge TV.
+ Kit fails: LEGITIMACY WITHOUT CHAIN + ACTIVATION OVER ACT. One-liner:
+ jersey + feelings, no receipt.
+ **LOGOS FACSIMILE** -- logos costume without chain work [thinking
+ costume, fact-check theater, pigeon chess, evil-sci vocabulary]. Forges
+ the receipt. Rhyme: demonic dishonest on logos leg [truth performing --
+ order_truth perform fork]. Distinct: demon maxxing = open skip; logos
+ facsimile = dishonest pretend.
+ Hub: applied ETHOS PATHOS LOGOS TENSION UNIT.
+
+FORCED VS WILLFUL READ [theory SCALE LADDER Part D -- judgment not meter]
+--------------------------------------------------------------------------------------------------------------------------------------------
+ Default: treat "stupidity" as structural before moral.
+ FORCED = below Part A minimum, stuck tension leg, MEASUREMENT SURFACE
+ CONTROL [MSC] off a captured surface, Nascent [early / unformed] misread,
+ or distributed capture node.
+ WILLFUL = knowledge + continuation on the record.
+ HUMAN-COST ROUTING ASYMMETRY: substrate cost routed away from placement /
+ capital / compute insiders. Housing example: single-family home [SFH]
+ owner-occupier inside household; long-term SFH rent = extraction
+ [appreciation externalized]. Apartments = different category
+ [building-scale BOUNDARY INTEGRITY [BI]; four distinctions in applied
+ HOUSING TENURE].
+ Nation may limit rent on substrate -- markets bounded, not total.
+
+SLICE COMMANDS [optional -- jump by density tier]
+--------------------------------------------------------------------------------------------------------------------------------------------
+ Density tiers: READER GUIDE [kit -- canonical] above. L1 spine: order_truth top-to-bottom.
+ L2 disorder guide pack: sed -n '/^UNIVERSAL LINK/,/^DIVISION -- GOD-AT-START/p' \
+ coherence_framework_v25_disorder_forms.txt
+ L2 order guide pack: sed -n '/^UNIVERSAL LINK/,/^FORM -- /p' \
+ coherence_framework_v25_order_forms.txt | head -120
+ L3 scale + TU: sed -n '/^SCALE LADDER:/,/^METHODOLOGY TRANSMISSION/p' \
+ coherence_framework_v25_theory.txt
+ Full glossary: grep -n '^QUICK REFERENCE GLOSSARY' coherence_framework_v25_applied_science.txt
+ Name list: grep -n '^NAME COMPRESSION POLICY' coherence_framework_v25_theory.txt
+ WIP queue: sed -n '/^ACTIONABLE QUEUE/,/^CLOSED/p' \
+ Personal/coherence_framework_v25_ai_long_term.txt | head -20
+
+Cross-ref: coherence_framework_v25_order_truth.txt; NAME COMPRESSION POLICY
+ [theory]; HONESTY [theory Section Two]; SOLUTION VETO [theory Section Two]
+ TENSION UNITS [SCALE LADDER Part B]; FORCED VS WILLFUL READ [SCALE LADDER
+ Part D]; HOUSING TENURE [applied]; HONEST LIMITS [theory Section Four]
+ GENUINE AXIS [theory Section One]; MASS ADOPTION HONEST LIMIT [theory
+ Section Four]; T9 SOFT EXPOSURE METHODS [applied Section Five]; QUICK
+ REFERENCE GLOSSARY [applied]; READING PROCEDURE [theory Section Four]
+ POLITICAL MEASUREMENT PROTOCOL [applied Section Five]; cf_grep.txt.
