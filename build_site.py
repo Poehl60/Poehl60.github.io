@@ -41,6 +41,7 @@ GOOGLE_VERIFY = "5DBmhSs7USDDh5AoE4rybj9K0il1noBed9oylSnOzrI"
 # site and the repo point at each other (helps discovery both directions).
 REPO_URL = "https://github.com/Poehl60/Framework"
 
+# Favicon: inline SVG, so there is no favicon.ico 404 and no extra file.
 FAVICON = (
     "data:image/svg+xml,"
     "%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E"
@@ -50,6 +51,7 @@ FAVICON = (
     "%3C/svg%3E"
 )
 
+# Social share card. Must be an absolute URL to a real image; leave "" to omit.
 OG_IMAGE = f"{ORIGIN}{BASE}/og.png"
 
 EXCLUDE_REASON = "analyst_policy is bias-labeled personal political position, not kit reading"
@@ -571,18 +573,21 @@ def reset_out():
             shutil.rmtree(OUT, ignore_errors=True)
     os.makedirs(OUT, exist_ok=True)
 
+
 def main():
     reset_out()
+    # copy the social card into the built site so og:image resolves
     og_src = os.path.join(ROOT, "og.png")
     if os.path.isfile(og_src):
         shutil.copy2(og_src, os.path.join(OUT, "og.png"))
 
-    sitemap = []
-search_idx = []       # (title, path, kind)
-problems_nav = []
+    sitemap = []          # (path, lastmod)
+    search_idx = []       # (title, path, kind)
+    problems_nav = []
 
-all_topics = []       # (file label, dir, slug, title, path, desc)
-all_cases = []        # (kind, slug, title, path, desc, case_id)
+    all_topics = []       # (file label, dir, slug, title, path, desc)
+    all_cases = []        # (kind, slug, title, path, desc, case_id)
+
     for stem, label, subdir, flabel in KIT:
         src = os.path.join(ROOT, stem + ".txt")
         if not os.path.isfile(src):
