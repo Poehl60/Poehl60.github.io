@@ -220,7 +220,28 @@ def parse_topics(lines):
             parts.append(ln)
             j -= 1
         if not parts:
-            continue
+            # Wrapped-title case [added 2026-11-06]: the title block is a
+            # column-0 heading whose continuation is one-space indented, the
+            # same indent the body uses. 102 topics across five files had NO
+            # page because the loop above stopped at that indented line.
+            # Accept only when a col0 ALL-CAPS heading sits directly above.
+            if j >= 0 and lines[j].startswith(" ") and lines[j].strip():
+                k = j
+                while k >= 0 and lines[k].startswith(" ") and lines[k].strip():
+                    k -= 1
+                if k >= 0 and lines[k].strip() and not SEP.match(lines[k].rstrip()) \
+                        and not BANNER.match(lines[k]) and not CASE.match(lines[k]):
+                    head = lines[k].strip()
+                    # Caps test on the heading proper, before any [tag] tail.
+                    stem = re.split(r"\s+\[", head)[0].strip()
+                    letters = [c for c in stem if c.isalpha()]
+                    if len(letters) >= 4 and \
+                            sum(c.isupper() for c in letters) / len(letters) >= 0.85:
+                        parts = [ln.strip() for ln in reversed(lines[k:i])
+                                 if ln.strip()]
+                        j = k - 1
+            if not parts:
+                continue
         start = j + 1
         parts.reverse()
         title = " ".join(p.strip() for p in parts)
@@ -452,11 +473,40 @@ SHORT_FILE = {
 TOPIC_PAGES: dict[str, str] = {}   # uppercase topic title -> page path
 
 
+def resolve_topic_page(topic: str):
+    """Map an INDEX/cross-ref topic phrase to its SPECIFIC topic page.
+
+    Added 2026-11-06: rows used to always land on the whole-file page, so a
+    search phrase like 'why rent keeps rising' opened 6,846 lines of `applied`
+    instead of the HOUSING TENURE topic. Try, in order: exact title, title with
+    trailing [..] sub-point refs stripped, then a unique prefix match.
+    """
+    t = topic.strip().strip(";,.").upper()
+    if not t:
+        return None
+    if t in TOPIC_PAGES:
+        return TOPIC_PAGES[t]
+    # Drop sub-point selectors: 'STRUCTURE COUPLING [1][6]' -> 'STRUCTURE COUPLING'
+    base = re.sub(r"(\s*\[[^\]]*\])+\s*$", "", t).strip()
+    if base and base in TOPIC_PAGES:
+        return TOPIC_PAGES[base]
+    for cand in (t, base):
+        if not cand or len(cand) < 8:
+            continue
+        pref = [p for k, p in TOPIC_PAGES.items() if k.startswith(cand)]
+        if len(set(pref)) == 1:
+            return pref[0]
+    return None
+
+
 def route_kit_refs(text: str) -> str:
     """text must already be HTML-escaped. Links `applied` TOPIC cross-refs and
     exact ALL-CAPS topic titles to their pages."""
     def repl(m):
         name, topic = m.group(1), m.group(2).strip()
+        specific = resolve_topic_page(topic)
+        if specific:
+            return f'<a href="{href(specific)}">{name} — {topic}</a>'
         target = SHORT_FILE.get(name)
         if name == "analyst_policy":
             target = "read/analyst-policy.html"
