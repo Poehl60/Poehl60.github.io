@@ -1,0 +1,33 @@
+# Ignore everything by default — publish.sh stages an explicit allowlist.
+# This is a safety net, not the primary control. See PUBLISH_MANIFEST.txt.
+
+# Personal lane — never public
+Personal/
+coherence_framework_v25_analyst_policy.txt
+coherence_framework_v25_wip.txt
+coherence_framework_v25_ABSTRACT.txt
+coherence_framework_v25_ABSTRACT_PHYSICS.txt
+
+# Local harness / archive
+technical/
+scripts/bin/
+scripts/youtube-transcript.txt
+scripts/__pycache__/
+*.pyc
+__pycache__/
+
+# Generated site — CI rebuilds docs/ from the kit on every push
+docs/
+
+# Local scraps
+logs/
+brave.png
+.firecrawl/
+
+# Agent config
+.cursor/
+
+# Editor / OS
+.DS_Store
+*.swp
+*~
