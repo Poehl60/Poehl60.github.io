@@ -1,0 +1,28 @@
+COHERENCE FRAMEWORK v25 -- CASE LIBRARY HUB
+============================================================================================================================================
+ split [2026-07-11 Phase 1]. Case bodies live in two kit files:
+
+ coherence_framework_v25_cases_real.txt -- real-world [Type: S:3 / S:3 partial / S:4]
+ coherence_framework_v25_cases_fiction.txt -- fiction [E-axis cap; see fiction file]
+
+Grammar [operative]:
+ FILE ::= header + GUIDE + SECTION*
+ GUIDE ::= [CASE:BY_QUALITY] block [best→worst compass]
+ SECTION ::= [SOURCE:KEY] banner + CASE*
+ CASE ::= [CASE:NAME] + body
+
+Phase status:
+ [x] Phase 1 -- split + contamination fix + hub [this file]
+ [x] Phase 2 -- SOURCE alpha reorder + chrono within SOURCE [2026-07-11]
+ [x] Phase 3 -- GUIDE curation [BY_QUALITY best→worst] [2026-07-11]
+ [x] Phase 4 -- kit touch [cf_grep, rules, promotion skill, hooks] [2026-07-11]
+
+Promotion [after Phase 1]:
+ REAL promote -> cases_real.txt only
+ Fiction promote -> cases_fiction.txt only
+
+Fiction moved from REAL block [Phase 1]:
+ ADAM_EVE, CAT_SCIENTIST, KINGDOM, TOG_TIMELINE
+
+Cross-ref: in Personal/coherence_framework_v25_ai_long_term.txt
+============================================================================================================================================

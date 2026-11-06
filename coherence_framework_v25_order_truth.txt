@@ -1,0 +1,533 @@
+COHERENCE FRAMEWORK v25 -- ORDER / TRUTH / DISORDER
+============================================================================================================================================
+Critical file after beginner [L1]. Kit read order: coherence_framework_v25_beginner.txt
+ READER GUIDE [kit -- canonical] only. This file = L1 spine body [top-to-bottom].
+Owns epistemic routing [METHOD OF TRUTH], claim-type bands [pointer only -- full map in theory
+SEC:EPISTEMIC_SITUATEDNESS], Order/Disorder band defs, and the Order/Truth/Disorder tension [modes
+held, not single-max]. Other tension units stay in theory [THREE-STATE, SCALE LADDER Part B] and
+applied [SPEED / SCALE / COMPLEXITY]. Not Abstract cosmology; not CENTER / TRUTH doctrine [those
+stay theory Section One].
+Companion files: beginner, theory, applied, applied_s6, cases, wip, analyst_policy
+ ABSTRACT [personal], cf_grep.txt.
+Format: wrap at 140 [desktop]. Separators = 140. Legacy 108 was phone-era.
+============================================================================================================================================
+
+DIVISION -- ORDER / TRUTH / DISORDER
+============================================================================================================================================
+Order telos, epistemic mode routing, claim-type bands [three bands], three-point axis, Disorder band.
+CENTER / TRUTH + TRUTH [quality tests] remain theory Section One.
+Disorder-tool pointers [THIRDS, REPUTATION, SURFACE VARIANCE...] remain theory ABSTRACT STRUCTURAL
+ POINTERS [stubs point here for core defs].
+Tension unit here: METHOD OF TRUTH mode poles [Real / Theory / Truth; Abstract secondary].
+ Other tension units: theory / applied. [Post-2026-11-05 the spine also carries ANALYST AXIS
+ POSTURE RANKING as a ranking ladder -- not a tension unit.]
+ L1 topic order: beginner READER GUIDE [kit -- canonical] **L1 spine** list.
+============================================================================================================================================
+
+ORDER TOWARD TRUTH [named distinction -- v25]
+--------------------------------------------------------------------------------------------------------------------------------------------
+ Order is good only as orientation toward truth [legible, correctable structure]. Order that serves a
+ person, formation, or nation is loyalty architecture wearing a rulebook -- not truth contact.
+ Telos test:
+ Beneficiary-order: rules fire to protect THIS actor or THIS unit [stability, punishment of threats
+ to us, cohesion, loyalty reward]. Legitimacy surface / imposed axis / partial state religion class.
+ Truth-order: rules fire to make structure legible and correctable -- CAUSAL LEGIBILITY, MEASUREMENT
+ INTEGRITY, behavioral record over stated position. Oriented toward TRUTH AXIS contact via four
+ conditions [tests not badges].
+ THREE ORDER TYPES [political psychology routing]:
+ GENERATIVE ORDER: order toward truth + correction + surplus flow outward. Rules hold tension
+ routing traceable; break captured order when contact blocks. Material surplus legitimate only
+ here -- landing, not loyalty reward.
+ PUNITIVE ORDER: hostility through rule-enforcement mask [tradition, obedience, punish deviance].
+ Punitive costume serving the bridger, not truth or fair distribution -- L/R jersey irrelevant.
+ Optional psych illustration [grep theory ORDER TRUTH REFERENCE BANK -- not kit finding].
+ COMPLIANCE ORDER: hostility through moral/conformance mask [cancellation, virtue enforcement,
+ "our side" policing]. Stated anti-hierarchy can still be beneficiary-order. Mirror on compliance
+ mask -- L/R jersey irrelevant; psych adjacency optional, not load-bearing.
+ Distinctions load-bearing:
+ ROUTING [who gets surplus] ≠ ORDER TYPE ≠ CORRECTION [break/fix when order blocks contact].
+ **THREE ORDER TYPES -- TESTS [one named row each; costume is not evidence -- 2026-11-05]:**
+ GENERATIVE: name the surplus, name who receives it **outside the issuing unit**, name the correction
+ path that fired **against the issuer at least once** [unfired = untested, not clean].
+ PUNITIVE: name the rule broken + name who benefits from the punishment; if the punishment serves
+ distribution or truth-contact instead, not punitive.
+ COMPLIANCE: name the conformance demand + name who gains from the policing; stated anti-hierarchy
+ is **not** a pass -- the beneficiary test decides.
+ **Overlap read:** punitive + compliance are **mask variants of one hostility routing** -- split by
+ which register is enforced [force/threat vs moral standing], never by jersey.
+ Marx praxis read [11th Thesis]: change the world = doing over yap; not order for a class beneficiary.
+ **MIXED-ROW FIX [lanes, not rows -- analyst 2026-11-05]:** score per **domain / lane**, not whole
+ row. One actor can run truth-order on a measurement lane and beneficiary-order on a distribution
+ lane in the same quarter -- that is normal, not a contradiction. Report **band per lane + one
+ dominant vector** [which lane sets the budget and controls the exit]. Whole-row single verdict is
+ reserved for rows with **one** routing lane only.
+ **Falsification [loss permitted -- analyst 2026-11-05]:** beneficiary-order consistently produces
+ higher CAUSAL LEGIBILITY and correction access than truth-order on the same substrate across
+ repeated rows. **A single losing row does not falsify** -- truth-order that pays and loses on one
+ named row is expected, not disconfirmed; one failed instance is **never** a group verdict ["the
+ formation lost, so write off everyone in it" is not a test result]. Falsifier fires only when
+ truth-order cannot name the priced sacrifice it made on **any** row.
+ Cross-ref [QC pointer only]: coherence_framework_v25_ABSTRACT.txt REALITY
+ STACK -- Order goal ≠ absolute good; costly good/bad tolerated
+ extraction among few hard nevers; costless good ≈ disorder/stupid
+ honesty required on high-complexity / exit paths [PERSONAL BIAS
+ not kit finding].
+
+ **Hard-mode / functional posture [L4]:** grep theory ORDER TRUTH REFERENCE BANK
+ [OPERATIVE GOOD, FUNCTIONAL ORDER, SURFACE-LEDGER, desk cross-refs].
+
+METHOD OF TRUTH [epistemic routing -- v25]
+--------------------------------------------------------------------------------------------------------------------------------------------
+ PURPOSE: mode routing under CENTER / TRUTH. Framework produces tests, not absolute truth definition.
+ Real + Theory + truth-contact on axis; Abstract secondary only.
+
+ RELATION: CENTER / TRUTH = axis doctrine. TRUTH [quality tests] = proximity instrument. HONESTY =
+ symmetric cost ledger. This block = which mode does what; failure modes off center.
+
+ ANTI-NEUTRAL DOCTRINE [epistemic load-bearing -- analyst 2026-08-30]:
+ **Nothing is neutral** -- every instrument, frame, venue, montage, press tier,
+ referee pose, and selection gate carries prior; bias is in the stack, not a
+ removable wrapper. Neutrality **display** = routing choice, not absence of tilt.
+ **Claim of no bias = danger signal** -- epistemic costume [referee theater,
+ ideological-neutrality mismatch, both-sides jersey, "trust the science" without
+ apportionment]; masks **whose capture counts** [TRUE LIES neutrality face
+ METHOD OF TRUTH Abstract-primary]. Analyst treats no-bias branding as **HOLD
+ on hidden axis** until named.
+ **Truth-neutral maybe, unreachable** -- CENTER / TRUTH may be neutral in abstract
+ [axis doctrine]; operational truth-contact is always partial, situated, and
+ skewed. Framework produces **tests + named tilt**, not a bias-free truth
+ snapshot. Honest work: declare prior, run battery, state falsification. Fake
+ work: deny tilt, win debate. Cross-ref: BENEFICIARY COMPASS [neutral impossible
+ -- applied_s6]; ORDER SOLUTION VECTOR [not mandatory neutrality]; CENTER /
+ TRUTH unreachable [applied upper bound]; CONCERN FOR TRUTH [reward deters
+ truth-contact]; COMPRESS vs SPREAD [FST INDEX-SPREAD -- accurate desk names
+ tilt; montage denies it].
+ **Substrate vs pathos [desk split -- analyst 2026-10-22]:** **Everything
+ subjective** and **nothing objective** are both **category errors** if collapsed.
+ **Substrate** = what happened, who paid, ledger, headcount, deal close, incentive
+ facing -- **battery + falsification**, not taste. **Pathos** = taste, meaning,
+ desire contract [what SKU was for], moral weight of representation -- **situated**,
+ **no neutral referee**; honest prior declared. **Objectivism mistake** [market /
+ chart / object as moral law] and **full relativism mistake** [substrate as vibes]
+ both **avoid contact**. Desk order: pin substrate first on closure / routing
+ reads; then pathos without pretending pathos settled substrate. Cross-ref:
+ theory **SEC:EPISTEMIC_SITUATEDNESS** [claim-type vocabulary + claim bands];
+ analyst_policy **SUBSTRATE PATHOS DESK SPLIT**; [CASE:XBOX_GAMING_HUB_2026] [#14];
+ ETHOS PATHOS LOGOS [below].
+
+ NAMING GUARD: lived reality [pre-proof floor] ≠ Real [CASE:REAL]. Disorder collapses names
+ [abstract-as-evidence; permission-as-truth].
+
+ TRUTH INCENTIVE ASYMMETRY [portable -- ABSTRACT export 2026-09-05; T3]:
+ Default band **"truth"** = whatever works [instrumental reason; performed alignment
+ short-horizon payoff]. **Truth-center** = legible correctable structure on axis --
+ present, costly, often power-ignored. Beneficiary-order + rigged action geometry →
+ truth-contact **high cost, low reward**. Pressure-formed truth axis holds when payoff
+ negative -- **not moral badge**. Desk: do not expect default incentives to reward
+ truth-contact; price cost explicitly or grep theory METHOD OF TRUTH FAILURE MODES BANK.
+ Cross-ref: CONCERN FOR TRUTH [theory pointer]; ORDER TOWARD TRUTH telos test
+ ABSTRACT ACTION BAND [rigged geometry -- PERSONAL BIAS; pointer only].
+
+ MODES:
+ **Real** -- record, Step 0, CAG+MI, S3 bar; anchor not idol.
+ **Theory** -- apply on Real; ILLUSTRATION ≠ CONFIRMATION.
+ **Abstract** -- pattern/structure for think or apply; **secondary only**; never primary weight
+ without Real + truth-contact gate. Personal cosmology excluded from kit confirmation unless
+ analyst assigns.
+ **Truth** -- center axis [CENTER / TRUTH]; binds Real + Theory.
+
+ TENSION: named poles not single-max. Real∅Theory = fact pile. Theory∅Real = float. Abstract∅ceiling =
+ truth trap. Rhyme: THREE-STATE INSTRUMENT [theory]; L2 MI↔CL↔RI; SCALE LADDER Part B [theory].
+ **DEMOGRAPHIC PROXIMITY INSTRUMENT :** voting skew, urban/rural, risk-mitigation =
+ axis-proximity instruments at named stratum [L1 founders / L2 elite-vocal / L3 mass base] --
+ not population-essence definitions. Split strata before routing demographic claims.
+
+ --- reference density: theory METHOD OF TRUTH FAILURE MODES BANK [grep only] ---
+ **Failure modes bank [reference]:** coherence_framework_v25_theory.txt
+ grep METHOD OF TRUTH FAILURE MODES BANK -- specimens, STRUCTURE COUPLING depth,
+ CORP CLAIM AUDIT, Track C locators. Not order_truth spine [beginner FILE DENSITY].
+
+ ORDER ROUTE: pattern borrow → Real check → Theory deploy → truth-contact.
+ **SECONDARY WHEN PERSONAL [desk 2026-08-29]:** mode routing + STRICT TEST INVERT demote when
+ read becomes vendetta; primary = outputs + routing ledger on substrate [ANALYST AXIS DESK STRAW
+ GUARD].
+ **ABSTRACT SECONDARY DISCIPLINE:** abstract counts only after Real + Theory gate.
+ **Sophist export** [ABSTRACT SOPHIST EXPORT 2026-08-11]: structural /
+ epistemic pins land theory METHOD OF TRUTH FAILURE MODES BANK; factual cosmology
+ stays ABSTRACT-local [pointer only].
+
+ | Mode | Disorder | Local drift | Order |
+ |----------|---------------|---------------|-----------------|
+ | Abstract | primary trap | under-used | secondary |
+ | Theory | fact substitute | thin/proc | apply + test |
+ | Real | theatrical | over-focus | anchor |
+ | Truth | bypassed | crowded out | center axis |
+
+ FALSIFICATION: Real bar + Step 0 on disorder actors; truth-contact despite heavy process [weakens
+ Real-overfocus]; theory-only∅record [Correction Theatre]; label survives without truth-center or
+ long-horizon co-op [fails STRICT TEST].
+
+ **MID-AS-PREDICTOR [people-legibility instrument -- not a mode read; foil]:** **Start** =
+ reconstructed origin / myth / authorship [easy to package; edit after fact].
+ **Mid** = running response in exchange [somatic + mind visible; bulk of
+ people-legibility; strongest predictive record]. **End** = trajectory /
+ consequence [often avoided or fantasized]. Mid pattern often infers start +
+ end better than origin story or finale alone. **Start-anxiety** = solve
+ present/mid via genesis hunt [wrong layer when exchange window exists].
+ Soul-abstract may park without blocking mid read. Foil: literary self-
+ authorship / doubled-self frame.
+
+ Cross-ref: CENTER / TRUTH; order_truth STRICT ORDER/DISORDER; theory METHOD OF TRUTH
+ FAILURE MODES BANK; cf_grep.txt.
+
+ETHOS [analyst pin plain -- chat 2026-09-11]
+--------------------------------------------------------------------------------------------------------------------------------------------
+ **Ethos = authority and power** -- social or literal.
+ Social: who counts, permission to speak, jersey, office.
+ Literal: force, purse, platform, law.
+ Distinct from **pathos** [feel what] and **logos** [prove what followed] --
+ beginner Discourse register holds pathos/logos/cheat slang in context.
+ Power can be good [clear rules, real mandate, legible in/out]. Kit demon /
+ demon-maxxing = rhetoric cheat labels -- not "having power."
+ Default deployed authority often **mixes** threat undertone + logos costume +
+ good/smart = truth. Common failure when routing truth-contact; not the
+ definition of ethos.
+ **AUTHORITY TESTS [analyst 2026-11-05 -- one named row each]:**
+ LEGIBLE IN/OUT: name the entry rule and the exit rule [+ who can be removed, by whom].
+ REAL MANDATE: name a decision the authority made **against its own** stated interest and had it
+ hold -- unfired = mandate untested.
+ CLEAR RULES: name a case where the rule was applied to the **rule-holder** on record.
+ **Captured authority tells [inverse, same rows]:** exit exists only in theory; removal requires
+ the authority's own consent; rules fire only downward; "legible" is a published org chart that no
+ decision follows.
+ **Ethos is not a good/bad badge:** legitimate and captured authority both have ethos -- the tests
+ separate them. Absence of ethos is not virtue either [no mandate = no routing].
+ Cross-ref: applied ETHOS PATHOS LOGOS TENSION UNIT; METHOD OF TRUTH epistemic
+ costume [no-bias branding]; perform fork on logos leg [truth performing].
+
+THREE-POINT AXIS [Order | Disorder | Chaos]
+--------------------------------------------------------------------------------------------------------------------------------------------
+ **Order** = one end [true variance; co-op standard; generative paths].
+ **Disorder** = **middle** [not Order's opposite pole]. Structured extraction; billion surface forms
+ **same invariant goal** [below]. **Desk rhyme [analyst 2026-10-29]:** also read as **slow chaos**
+ -- gradual slide through mid off truth-center [not instant Chaos pole; rhymes theory **STANCE MOTION**].
+ **Chaos** = far end from Order [past disorder] -- wrong category / pre-form / break; **not** "more
+ disorder." Binary Order-vs-disorder reads miss the middle band where most institutional capture lives.
+ **UNCLASSIFIED BAND [analyst 2026-11-05 -- fourth slot, so the map can fail]:** Order / Disorder /
+ Chaos do **not** exhaust the space. **UNCLASSIFIED** = record insufficient, or the row's own telos
+ is not yet stated, or the read is contested on substrate. **Use it explicitly** -- forcing a row
+ into a band on thin record is the main way this test set gets discredited. A row parked
+ UNCLASSIFIED is **not** a soft disorder verdict; it is a **non-result** [no score, no inference,
+ revisit when the ledger or telos is named]. An exhaustive three-band map is unfalsifiable; this
+ slot is what makes the partition testable.
+ **Direction read [desk 2026-08-29]:** most substrate is **mid** -- operative question is **vector**
+ [farm vs rot/steal; truth-center vs off-center], not pole badge. ANALYST AXIS DOCTRINE [DESK STRAW
+ GUARD below].
+ Cross-ref: HELL AS DIRECTION [applied S8 -- trajectory not location]; TENSION MAINTENANCE [disorder
+ dissolves; Order holds variance]; theory **STANCE MOTION / OBLIQUE PATHS** [up Order-ward /
+ down Chaos-ward vertical; pathos drift; convergent hubs -- grep `^STANCE MOTION`].
+
+ **MID ENACTMENT [disorder middle-band -- promoted logic 2026-10-25]:** public desire
+ is **pre-real** until **mid** routes permission, contract, platform access, legal
+ standing, resource flow. **Expression ≠ enactment.** **Policy meter:** enacted routing
+ and standing -- not polls, sentiment, or mission slides alone. Disorder captures mid:
+ permits desires it can extract through; blocks enactment for **bad desires** [exit,
+ local order, rival mid, unpriced contact, truth-center correction on captured substrate].
+ **Director-node read [structural -- not conspiracy SKU]:** **mid is shaped by "best"**
+ [patron-class director nodes -- **hidden** [elite patron networks] or **open** [named
+ apex]]; diffuse "the people" routing is **not** the default architecture. **Empirical
+ rhyme:** documented patron networks steer access, law, and social weather [**true as
+ pattern** -- scope disputed; kit does not rest on one scandal file]. **Falsifier:**
+ periods/places where permission routing was **flat** without director capture and
+ **matched** enactment latency. Two filters: **expression** [stigma, formation --
+ POLITICAL STIGMA] and **enactment** [captured mid, no rails]. Tell: wide public
+ expression + absent/hostile mid = desire unreal. Full cosmology read: ABSTRACT **MID
+ LADDER, DESIRE ENACTMENT, AND APEX FIX/MOTIVATE** [T3 pointer]. Portable:
+ **DEMOCRATIC DESK CAPTURE** [analyst_policy NATION DESK PORTABLES §2].
+ Cross-ref: POLITICAL STIGMA [expression layer]; applied ROUTING BOUNDARY MONOPOLY
+ [permission layer]; theory **HIGH-TRUST COMPACT HONESTY**; analyst_policy **COMPACT
+ CONTRACT FLOOR**; ABSTRACT [cosmology home]
+ ANALYST AXIS DOCTRINE [below -- Order good / evil disorder / demon intolerance].
+
+ANALYST AXIS DOCTRINE [Order good | evil disorder | demon intolerance -- chat 2026-08-28]
+--------------------------------------------------------------------------------------------------------------------------------------------
+ Analyst pin -- not promoted theory finding. Compresses three-band map + chat thread
+ [CC / democracy-costume / demon register] into operative moral stack for order_truth reads.
+
+ **ORDER GOOD [direction only -- desk 2026-08-29]:** Order = solution **direction** [STRICT ORDER
+ DEFINITION] -- not Good badge or gov certification. Meter 3 [surplus + CC + exit] separates
+ passes; do not collapse into nation score. Good when surplus + distributed CC + exit trajectory
+ live [theory GOOD [operational definition] -- pointer]. Order-costume without farm vector still
+ fails STRICT TEST -- this block orients; does not bypass scoring.
+
+ **EVIL DISORDER:** Disorder = middle band = where operational **EVIL** usually lives [theory
+ EVIL [operational definition] -- pointer]: structured extraction, CC absent or inverted,
+ predictable forms [disorder_forms GUIDE]. Wrong but **legible** -- form library, beneficiary
+ analysis, STRICT DISORDER TEST. Not chaos pole [below].
+
+ **NO RIGGING PASS:** Order-vs-disorder trade-offs **fine when rigging absent** -- honest
+ concentration, functional CC, or local-context reads tolerable without costume load, inverted
+ CC, patron-demo pipe, or MSC. Rigging = extraction continues when
+ truth-center or long co-op dropped [STRICT TEST INVERT]. Lesser-evil / "best of the worst"
+ ranks disorder vs disorder only [STRICT DISORDER RANK ≠ REPAIR] -- still rot; does not farm.
+
+ **THRESHOLD = OUTCOME IN CONTEXT [analyst 2026-11-05]:** no universal rigging percentage.
+ The threshold is the named row's **own stated telos + deliverable** -- score against that, not
+ against an abstract share-of-surplus figure. What counts: do outcomes still land where the row
+ said they would, and does correction still reach the payer. Context read, not a global cutoff;
+ cross-row comparison uses **relative direction** [farm vs rot/steal], never one number.
+
+ **HONESTY OVER CC [analyst weighting -- chat 2026-08-28; grounded 2026-11-05]:**
+ **Honesty is logos in action** -- proof that shows up in the ledger, not a Band 1 taste claim.
+ That grounding is why it outranks CC here: it is a **substrate** read [admission rate under cost,
+ priced reversal, record vs act], consistent with the Substrate vs pathos desk order [Band 2 pin
+ first -- METHOD OF TRUTH above]. Not a process vibe promoted over substrate.
+ CC **can be demon-captured** [inverted CC, proxy decoys, democracy-costume habitat].
+ **Honest vs dishonest = rigging test** -- ledger alignment before CC count. Analyst
+ ranks meter 1 **HONESTY** >> CC >> Order/Good [SURFACE-LEDGER THREE-METER LADDER below].
+ CC inventory subordinate until surface ≈ act ≈ routing. Full axiom: analyst_policy
+ HONESTY OVER COSTUME [HONESTY OVER CC block].
+
+ **DEMON ZERO-TOLERANCE:** Demons **never tolerated** -- no lesser-evil pass, no useful orbit,
+ no spectacle credit. Demon = chaos-direction + perform fork [cases_fiction
+ [CASE:BLEACH_AIZEN_URAHARA], [CASE:FRIEREN] demon-class -- pointer]: truth **performing**,
+ care-words without care-graph, god-seat telos. Past disorder repair band -- category wrong,
+ unfixable inside fork. Framework telos = **demons wrong** [patch / contain / distributed CC
+ -- angel register over demon register]. Disorder wrong but predictable; demon = terminal
+ refusal target.
+
+ **POSTURE RANKING [worst → best -- chat 2026-08-28]:**
+ Routing posture ladder -- **not nation jerseys**; run per domain / institution.
+ Locks: pro-demon + dishonest worst; honest beats dishonest at same demon score
+ honest anti-demon beats honest neutral; Order/Good only after honesty + anti-demon
+ on care/perform lane [HONESTY OVER CC above].
+ | Tier | Posture | Read |
+ |------|---------|------|
+ | 0 WORST | Dishonest + pro-demon | Lies-at-scale + care-word perform
+ [freedom/democracy/care/peace without graph]; institution scam school; inverted CC
+ theater; unbounded liability + demon habitat [patron-export demo stack archetype] |
+ | 1 | Dishonest + demon-captured CC | Costume + correction decoys [elections/NGOs/courts/MSC
+ as perform stack] |
+ | 2 | Dishonest + neutral demon | Heavy costume / fake Order; not maximal perform |
+ | 3 | Dishonest + anti-demon | Lies on security/money/history; blocks demo pipe + liberal
+ care-word export; mirror-trap ["honest authoritarian"] -- still rot |
+ | 4 | Honest + pro-demon | Unstable -- care scam at scale fails ledger; local spectacle
+ appetite only |
+ | 5 | Honest + disorder | Quoted price; declared extract; honest bad; not demon on care lane |
+ | 6 | Honest + anti-demon | Force-open or shut up on care claims; angel lane not sainthood
+ rare at nation scale |
+ | 7 | Honest + anti-demon + Order contact | + truth-center + co-op attempt; admits failure
+ farms somewhere |
+ | 8 BEST/RARE | Honest + anti-demon + Order + Good trajectory | Boring-guy register
+ surplus→majority; CC fires true; exit live; **no confirmed nation** [Swiss/AEC =
+ hypothesis fragments]; aggregate nation posture **lower-mid at best** [desk 2026-08-29] |
+ **Compressed:** worst = dishonest pro-demon | bad = dishonest anti-demon | mid = honest
+ [disorder → anti-demon] | good = honest anti-demon + Order direction | best/rare = tier 8.
+ Anti-demon ≠ full honesty [cases_fiction angel register -- manage/contain vs perform].
+ Illustrative bands only [not badges]: tier 0–1 patron-export liberal demo at scale =
+ **liberalism demon-forced real form** [care-word perform + inverted CC; not jersey dodge]
+ tier 3 overt control blocking demo pipe; tier 5–6 partial domain passes; tier 8 none certified.
+
+ **DESK STRAW GUARD [analyst chat 2026-08-29 -- compress; not promoted finding]:**
+ Spine under misread attack -- hold as routing discipline:
+ [1] **Most is mid; read direction** -- three-band geometry; vector not pole badge.
+ [2] **Invert + modes secondary when personal** -- outputs + ledger primary.
+ [3] **Honest can fix; endless lies cannot** -- meter 1 = repair capacity [SURFACE-LEDGER].
+ [4] **Fix for that, not fix command** -- farm on admitted failure [STRICT ORDER FIX GUARD].
+ [5] **Direction telos** -- same move as [1]; ORDER = vector under STRICT TEST.
+ [6] **Invariant; same end** -- billion forms; physics-fail pull unchanged [DISORDER INVARIANT].
+ [7] **Form not law; fiction finds real** -- FUNCTIONAL ORDER ANTI-CAPTURE LANES block.
+ [8] **Liberalism demon-forced** -- tier 0–1 real form when perform fork + care-graph absent.
+ [9] **Nation lower-mid at best** -- no tier-8 cert; L/R jersey irrelevant.
+
+ Cross-ref: THREE-POINT AXIS [above]; STRICT ORDER DEFINITION; STRICT DISORDER DEFINITION
+ theory EVIL [operational definition]; theory GOOD [operational definition]; disorder_forms
+ GUIDE [evil-of-disorder]; analyst_policy HONESTY OVER COSTUME [HONESTY OVER CC]
+ analyst_policy AEC [distributed CC -- subordinate to honesty weighting when orienting]
+ applied POLITICS block [horizontal CC vs demon vocabulary costume]
+ theory ORDER TRUTH REFERENCE BANK [CHINESE ORDER CROSS-REF + WUXIA / 江湖 MORAL REGISTER;
+ grep theory].
+
+DEME GATE [falsifiable test -- canonical; moved from sophist 2026-11-05]
+--------------------------------------------------------------------------------------------------------------------------------------------
+ **Test, not opinion.** Runs on a **named row**; a pattern or a jersey is never enough.
+ Policy position + bias-labeled stance stays analyst_policy **DIVINE ELITE MANDATE
+ EXTRACTION** [DEME]; this block is the gate other files call.
+ **DEME label only when all four hold:**
+ [1] **elite-issued sacred mandate** [closed good: growth, safety, efficiency, team,
+ democracy, fit, GDP];
+ [2] **divine line** [money/margin/fit as **only** revelation that counts];
+ [3] **extract** upward with harm downstream;
+ [4] **no is closed** on record.
+ **Closed-no test [the discriminator]:** **no on record without heresy** = mandate
+ present. **If no is possible** on record [refusal, appeal, exit without apostasy
+ labels] → **not mandate** → **not DEME**. **Fake opt-out** [theater quit / trap] →
+ still demonic mandate if **load-bearing no** is closed.
+ **FALSIFIER:** a **real opt-out** exists on record [no punished only as ordinary
+ dissent, exit priced sanely, appeal live] → **not DEME**; name the leg instead.
+ **Legs separated** may be neutral or good: deadlines, hierarchy, mission language,
+ markets with real exit, symmetric rules -- **waste / liturgy theater**, not auto-DEME.
+ **One leg alone → name the leg**, not DEME by jersey.
+ **Demonic vs evil [operative split]:** **Demonic** = this **mandate** kind [sacred trap;
+ saying no is sin]. **Evil** = **real opt-out** but stay/play anyway [extract or predation
+ that can **work** -- open market grammar -- ugly, chosen or tolerated]. **DEME is not
+ evil** in this split -- **worse and demonic** [hijacks sacred register]. Rig/mean without
+ mandate → **demonic register** or demonic **behavior**, not DEME [theory **DEMONIC≠EVIL**].
+ **Demon [people only -- proven by failure, not essence; analyst 2026-11-05]:** **true demons**
+ = **persons whose order has totally failed on the record** -- rows show no working logos
+ [facsimile or void], fork-skill passing as Order-logos, no repair path that ever fires. The
+ label is **proven by total failure of order in their rows**, never by hidden-essence typing
+ [see **Soul = action** immediately below]. **Sys never demon** -- only **demonic machine** /
+ evil game / DEME row.
+ **Soul = action** -- judge deeds and rows, not hidden essence typing.
+ **Instrument ceiling:** **good** = top band this framework can **meter**; aim above the
+ instrument without scoring metaphysical sainthood. Plain tell: "the meter is holy";
+ "truth gets you fired"; "kids and poor pay so the line stays green."
+ **CLOCK [analyst 2026-11-05]:** the mandate is measured **inside its own renewal window** --
+ elected body **election to election**, corporate row **quarter to quarter**, contract per term.
+ [Same rule: DISORDER INVARIANT HORIZON IS THE ROW'S OWN CLOCK.] A mandate that only holds
+ because the next renewal cannot refuse it is the closed-no tell, not proof of legitimacy.
+ **Guardrail:** structure first; fixability second; soul verdict last. Anti-DEME on named
+ rows, not prog jersey; prove before labeling [analyst_policy DEME rows A--I].
+ Cross-ref: analyst_policy **DIVINE ELITE MANDATE EXTRACTION** [policy position, bias-labeled];
+ sophist **DIVINE REGISTER DESK LADDER** [pathos orient -- what false divine feels like];
+ ANALYST AXIS DOCTRINE [DEMON ZERO-TOLERANCE -- above]; theory **DEMONIC≠EVIL**.
+
+DISORDER INVARIANT [pointer]
+--------------------------------------------------------------------------------------------------------------------------------------------
+ Default pull toward **physics-fail** -- reality collapses into state **life cannot use** [terminal
+ unusable outcome; not mere conflict]. Distinct from chaos pole [break] and Order pole [recoverable
+ variance]. Band identity: **disorder ≈ structured extraction** [same invariant goal; billion surface
+ forms -- see SURFACE VARIANCE]. Not chaos [break] and not Order's opposite pole -- middle-band
+ operating mode. **Same end [desk 2026-08-29]:** surface forms swap; invariant payoff and
+ physics-fail pull do not -- prediction is trajectory, not costume label.
+ Operating mode: **short-term benefit always** -- no long-term co-op build; **brutal**
+ when force works, **sneaky** when loud action fails; **political stigma** routing under billion forms
+ [see POLITICAL STIGMA -- theory ABSTRACT STRUCTURAL POINTERS].
+ **HORIZON IS THE ROW'S OWN CLOCK [analyst 2026-11-05]:** "short" is **not** a fixed number of
+ years -- it is the **renewal cycle of the thing being read**. Elected body = **election to
+ election**. Corporate row = **quarter to quarter**. Contract = term. "Short-term" means **inside
+ one renewal window**; the tell is behavior that must pay off **before the next renewal** or it
+ does not happen at all. **Long is not the opposite of short** -- long co-op is **Order**, and it
+ runs **with** short horizons [a firm can farm clean quarter to quarter for decades]. Disorder is
+ not "short" but **short with the long trace cut** -- no build carried across windows. That makes
+ "short-term always" falsifiable: a row that keeps paying **across** its renewal windows without a
+ co-op build is **not** disorder by this test.
+ **STEELMAN [hostile read, answered -- analyst 2026-11-05]:** the strongest objection is that
+ "disorder" is what **order looks like from outside the beneficiary's ledger**, and that under
+ rigged action geometry [METHOD OF TRUTH TRUTH INCENTIVE ASYMMETRY] short-horizon extraction is the
+ **rational** move -- so the label is analyst costume. Answer: the file does **not** require actors
+ to be pro-short. **Long co-op is Order and works with short horizons**; the disorder tell is the
+ **long trace cut**, not brevity [HORIZON IS THE ROW'S OWN CLOCK above]. A row that farms clean
+ every quarter for decades is Order. This does **not** dissolve the objection -- it relocates it:
+ the test now turns on whether a long trace was **available**, which is a substrate claim the
+ analyst must show. Where availability cannot be shown, park **UNCLASSIFIED**.
+ Cross-ref [QC pointer only]: ABSTRACT REALITY STACK -- Disorder "best"
+ torus [greed singularity: torus-without-axis; useful orbit / contact
+ = madness] [PERSONAL BIAS; not kit finding]. Surface form catalog:
+ coherence_framework_v25_disorder_forms.txt [critical #3 -- forms only
+ defs stay here]. BB-type frame specimen: theory BB-FUNCTION [high cross-ref].
+
+STRICT ORDER DEFINITION [min/max -- chat 2026-07-20; twin of STRICT DISORDER]
+--------------------------------------------------------------------------------------------------------------------------------------------
+ **SLOGAN PAIR:** Order = **fix and maintain** [farm]; Disorder = **rot and steal on purpose**
+ [invariant payoff -- see STRICT DISORDER DEFINITION].
+ **FIX GUARD [desk 2026-08-29]:** fix = **farm on admitted failure** at correct CC layer -- not
+ command, not Goldmask mend, not policy slogan. Honest fail → repair path; endless lie → perform
+ repair only [theory ORDER TRUTH REFERENCE BANK SURFACE-LEDGER; ADMIT-FAILURE].
+ **MIN:** Order = fix + maintain + build usable life [solution vector: co-op + effort + farm clean +
+ truth on center axis]. Not "maintain any stable system" -- stable extraction ≠ Order.
+ **TELOS PRECEDENCE [analyst 2026-11-05]:** MIN is a **floor, not a competing score**. An order
+ that fails the ORDER TOWARD TRUTH telos is **disqualified regardless of usable-life output** --
+ competent beneficiary-order does not pass by building well. Order of operations: telos test first,
+ then MIN floor, then MAX costume tests. Failing MIN disqualifies a telos pass; passing MIN never
+ rescues a telos failure.
+ **MAX:** that vector **minus** costume / mere stability / sovereign-as-order / entropy-deflection
+ **plus** three-band placement [Order ≠ disorder-middle ≠ chaos]; **plus** Order-costume tests
+ [outputs worsen while legitimacy rises; process rigor↑ truth-contact↓; fake-co-op tells
+ FAKE ORDER ISLAND / jurisdiction pocket]. Not Hobbes sovereign-as-order; not Plato-form elite
+ mask; not compliance idol [flawed Order]; not legitimacy surface over rotting outputs [fake
+ disorder Order]; not "rules exist / low entropy" alone. Convergence names [Logos / Dharma /
+ Tao / Natural Law / Sacred] = directional rhyme only -- not theology proof.
+ **COSTUME TESTS [MAX negatives converted -- analyst 2026-11-05; one named row each]:**
+ SOVEREIGN-AS-ORDER: name the output that got worse while the sovereign's legitimacy rose; if no
+ output worsened, the label is empty.
+ ELITE-FORM: name the decision an elite could **not** have reversed on record; unreversed = form.
+ COMPLIANCE-IDOL: name the conformance metric + name a real refusal that survived it.
+ ENTROPY-DEFLECTION: name the decay that was re-labeled [aging stock, deferred maintenance,
+ unfunded promise] + who was told it was stable.
+ LEGITIMACY-SURFACE: name one row where legitimacy rose and the ledger did not move.
+ **Any costume with no named row = withdrawn**, not scored.
+ **STRICT TEST:** if removing truth-center or long-horizon co-op still leaves the label standing →
+ not strict Order [costume or middle-band].
+ **BAND:** chaos = break / unusable board; disorder = structured short-term extraction [often
+ mislabeled chaos]; only Order **farms the wound**.
+ Cross-ref: DISORDER INVARIANT; STRICT DISORDER DEFINITION [below]; SURFACE VARIANCE [theory]
+ ABSTRACT [personal -- Order/disorder/chaos map pointer only]; Order-costume / island pins.
+
+STRICT DISORDER DEFINITION [min/max -- chat 2026-07-20; twin of STRICT ORDER]
+--------------------------------------------------------------------------------------------------------------------------------------------
+ **SLOGAN:** Disorder = **rot and steal on purpose** [invariant payoff under N forms]. Purpose = grab /
+ physics-fail -- not always villain speech; neglect that serves extraction still counts. Honest
+ failure + honest repair attempt ≠ disorder. Chaos [board-break] ≠ this band.
+ **MIN:** short-term grab + no long co-op + truth off-center → physics-fail pull [rot and/or steal for
+ invariant benefit].
+ **MAX [opposite of Order MAX]:** anti-solution mode -- refuse co-op / record / long trace; **no farm**
+ truth bypassed or fake-centered; **rides** wound rather than farming it; **wears** Order costumes
+ [sovereign-as-order, elite form, compliance idol, entropy-deflection, "chaos" mislabel] while
+ substrate extracts. Same goal, billion forms [SURFACE VARIANCE]. Hijacks soul/cosmic language for
+ Abstract-primary trap when useful.
+ **STRICT TEST INVERT:** if truth-center and long-horizon co-op are dropped and the pattern **still
+ works** [extraction continues] → disorder confirmed. Label as "chaos" or "Order" that fails Order
+ STRICT TEST and keeps grab payoff → middle-band, not poles.
+ **RANK ≠ REPAIR [minor -- chat 2026-07-20]:** "not that bad" / less-rotten-than-X only ranks
+ disorder vs disorder [triage]. Still rot. Order = **solution direction** [form and maintain],
+ not milder extraction. Do not read floor-ranking as farm.
+ ADMIT-FAILURE / REPAIR CAPACITY [chat 2026-08-01]:
+ Order **can** admit failure and fix -- farms the wound at correct CC layer.
+ Disorder **cannot** without collapsing invariant payoff: only relabel, deflect
+ [wrong CC target], or perform repair [visible process, routing unchanged].
+ Blame **avoidance** + blame **routing** replace investigation -- not order-
+ blame [see POLITICAL STIGMA]. Rhymes: honest failure + honest repair ≠
+ disorder [above]; only Order farms the wound [STRICT ORDER BAND]. Effort +
+ merit at **correct layer** = solution vector [analyst_policy PAID
+ APPRENTICE / ROUTING BOUNDARY -- pointer only].
+ Cross-ref: [CASE:KIJABE_WESTRUM_CULTURE_ASCENT] [just culture]
+ Cross-ref: STRICT ORDER DEFINITION [ORDER SOLUTION]; SURFACE VARIANCE; POLITICAL STIGMA;
+ EXTRACTION CYCLE; order_truth ANALYST AXIS DOCTRINE [above]; ABSTRACT [personal -- pointer only];
+ HELL AS DIRECTION; ANTI-COHERENCE COST ASYMMETRY WEAPONS / TERMINAL reads [applied --
+ physics-fail tier]; REPUTATION AS DISORDER TOOL [theory]; THIRDS AS WEAPON [theory -- adjacency];
+ theory ORDER TRUTH REFERENCE BANK [MONKEY'S PAW CORRECTION; grep].
+
+CLAIM-TYPE BANDS [pointer -- band vocabulary lives in theory]
+--------------------------------------------------------------------------------------------------------------------------------------------
+ **Canonical home:** theory **EPISTEMIC SITUATEDNESS** [SEC:EPISTEMIC_SITUATEDNESS] --
+ claim-type vocabulary, **CLAIM BANDS** [1/2/3], TWIN MISTAKES, moral context route.
+ **Spine keeps the rule, not the map:** Band 1 = taste/desire contract [declare prior];
+ Band 2 = substrate [falsify]; **desk order = Band 2 pin first**, then Band 1 read without
+ pretending Band 1 settled Band 2. Full table: grep theory **SEC:EPISTEMIC_SITUATEDNESS**.
+ **Why not on spine:** reference density [beginner FILE DENSITY] -- same rule as METHOD OF
+ TRUTH FAILURE MODES BANK [theory, relocated 2026-09-10].
+ Cross-ref: **Substrate vs pathos** [above]; analyst_policy **SUBSTRATE PATHOS DESK SPLIT**;
+ sophist **EPISTEMIC BAND PATHOS ORIENT** [felt side only].
+
+NATION DESK PORTABLES [pointer -- moved to analyst_policy 2026-11-05]
+--------------------------------------------------------------------------------------------------------------------------------------------
+ **Eight ABSTRACT-export portables moved off this spine** [beginner L1 no-inflate;
+ header owns band defs, not cosmology]. **NATION ETHOS-LOGOS BAND** [§1],
+ **DEMOCRATIC DESK CAPTURE** [§2], **LEGAL WEIGH-IN SPIRIT NOT LETTER** [§3],
+ **UNITY BRAND ON REFUSING-UNITY SUBSTRATE** [§4], **EU LEGAL BALKANS DESK** [§4],
+ **APEX INSTITUTION RELAY EU UN US** [§5], **NEGATIVE-SUM REGION NON-TELOS** [§6],
+ **WAR CREDIT OPERATOR CLASS** [§6].
+ **Home:** analyst_policy **NATION DESK PORTABLES** [§ index + full bodies].
+ Class = **PERSONAL BIAS / T3 portables** -- not band defs, not kit findings.
+ Spine keeps **MID ENACTMENT** [disorder middle-band] and **ETHOS** [register] only.
+ Cross-ref: theory **ABSTRACT STRUCTURAL POINTERS** [stubs]; analyst_policy
+ **ABSTRACT NATION DESK EXPORT** [§ index]; sophist **DEMOCRATIC DESK CAPTURE** pointer.
+
+END ORDER / TRUTH FILE
+============================================================================================================================================
+Cross-ref: CENTER / TRUTH [theory]; TRUTH [quality tests -- theory]; HONESTY [theory]; THREE-STATE
+ INSTRUMENT [theory]; SCALE LADDER Part B [theory]; SPEED / SCALE / COMPLEXITY [applied]; TENSION
+ MAINTENANCE [theory]; ABSTRACT STRUCTURAL POINTERS remainder [theory]; beginner terminology
+ theory ORDER TRUTH REFERENCE BANK [FUNCTIONAL ORDER home]; cf_grep.txt.
