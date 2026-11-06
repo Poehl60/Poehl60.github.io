@@ -578,7 +578,11 @@ def main():
         shutil.copy2(og_src, os.path.join(OUT, "og.png"))
 
     sitemap = []
+search_idx = []       # (title, path, kind)
+problems_nav = []
 
+all_topics = []       # (file label, dir, slug, title, path, desc)
+all_cases = []        # (kind, slug, title, path, desc, case_id)
     for stem, label, subdir, flabel in KIT:
         src = os.path.join(ROOT, stem + ".txt")
         if not os.path.isfile(src):
