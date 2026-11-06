@@ -479,6 +479,7 @@ def page(path, title, desc, body, crumb="", jsonld=None, noindex=False):
 <html lang="en">
 <head>
 <meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="google-site-verification" content="{GOOGLE_VERIFY}" />
 <title>{html.escape(title)}</title>
 <meta name="description" content="{html.escape(desc)}">
@@ -838,7 +839,6 @@ def main():
          "<span class=\"k\">${x[2]}</span></li>`).join('');}q.addEventListener('input',draw);draw();"
          "</script>",
          crumb_html([("Home", ""), ("Search", None)]), noindex=True)
-    sitemap.append(("search.html", "2026-11-06"))
 
     # ---- VERSIONS.md -> versions.html
     vers_body = "<h1>Versions</h1>"
