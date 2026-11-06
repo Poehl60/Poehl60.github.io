@@ -479,7 +479,7 @@ def page(path, title, desc, body, crumb="", jsonld=None, noindex=False):
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="google-site-verification" content="{GOOGLE_VERIFY}" />
 <title>{html.escape(title)}</title>
 <meta name="description" content="{html.escape(desc)}">
 {robots}
