@@ -31,6 +31,7 @@ OUT = os.path.join(ROOT, "docs")
 SITE_NAME = "Coherence Framework"
 BASE = "/Framework"                       # GitHub Pages project path
 ORIGIN = "https://poehl60.github.io"
+GOOGLE_VERIFY = "5DBmhSs7USDDh5AoE4rybj9K0il1noBed9oylSnOzrI"
 
 EXCLUDE_REASON = "analyst_policy is bias-labeled personal political position, not kit reading"
 
