@@ -1,0 +1,68 @@
+name: Build and deploy site
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '**/*.txt'
+      - 'INDEX.md'
+      - 'VERSIONS.md'
+      - 'README.md'
+      - 'build_site.py'
+      - 'scripts/build_site.py'
+      - '.github/workflows/pages.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Locate builder
+        id: find
+        run: |
+          if [ -f scripts/build_site.py ]; then
+            echo "path=scripts/build_site.py" >> "$GITHUB_OUTPUT"
+          elif [ -f build_site.py ]; then
+            echo "path=build_site.py" >> "$GITHUB_OUTPUT"
+          else
+            echo "::error::build_site.py not found at scripts/build_site.py or repo root"
+            exit 1
+          fi
+
+      - uses: actions/configure-pages@v5
+
+      - name: Build
+        run: python3 "${{ steps.find.outputs.path }}"
+
+      - name: Report size
+        run: |
+          echo "pages: $(find docs -name '*.html' | wc -l)"
+          echo "urls:  $(grep -c '<url>' docs/sitemap.xml)"
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: docs
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
