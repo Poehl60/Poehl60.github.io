@@ -41,6 +41,17 @@ GOOGLE_VERIFY = "5DBmhSs7USDDh5AoE4rybj9K0il1noBed9oylSnOzrI"
 # site and the repo point at each other (helps discovery both directions).
 REPO_URL = "https://github.com/Poehl60/Framework"
 
+FAVICON = (
+    "data:image/svg+xml,"
+    "%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E"
+    "%3Crect width='32' height='32' fill='%230f1115'/%3E"
+    "%3Ctext x='16' y='23' font-size='20' font-family='monospace' "
+    "fill='%237fb2ff' text-anchor='middle'%3E~%3C/text%3E"
+    "%3C/svg%3E"
+)
+
+OG_IMAGE = f"{ORIGIN}{BASE}/og.png"
+
 EXCLUDE_REASON = "analyst_policy is bias-labeled personal political position, not kit reading"
 
 # Private-lane redaction is OFF by design.
