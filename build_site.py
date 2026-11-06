@@ -577,13 +577,11 @@ if os.path.isfile(og_src):
 
 def main():
     reset_out()
+    og_src = os.path.join(ROOT, "og.png")
+    if os.path.isfile(og_src):
+        shutil.copy2(og_src, os.path.join(OUT, "og.png"))
 
-    sitemap = []          # (path, lastmod)
-    search_idx = []       # (title, path, kind)
-    problems_nav = []
-
-    all_topics = []       # (file label, dir, slug, title, path, desc)
-    all_cases = []        # (kind, slug, title, path, desc, case_id)
+    sitemap = []
 
     for stem, label, subdir, flabel in KIT:
         src = os.path.join(ROOT, stem + ".txt")
