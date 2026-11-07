@@ -54,6 +54,20 @@ GOOGLE_VERIFY = "5DBmhSs7USDDh5AoE4rybj9K0il1noBed9oylSnOzrI"
 # at the site root (BingSiteAuth.xml) or via importing from Search Console.
 BING_VERIFY = ""
 
+# IndexNow key [protocol: indexnow.org]. Proves the site is yours when Bing,
+# Yandex, Naver, Seznam, or DuckDuckGo are pinged that URLs changed.
+#
+# Leave empty to disable. To enable: put a key of 8-128 chars (a-z, A-Z, 0-9,
+# and dashes only) in here. The build then publishes it at
+# https://poehl60.github.io/<key>.txt, which is the whole verification step —
+# there is no account, no dashboard, no OAuth.
+#
+# WHY IT HAS TO BE GENERATED HERE: docs/ is gitignored and rebuilt from scratch
+# by CI on every push, so a key file uploaded by hand would vanish on the next
+# deploy. Writing it from a constant in the builder makes it survive rebuilds.
+# The key is public by design — it lives at a public URL. It is not a secret.
+INDEXNOW_KEY = ""
+
 # Fallback lastmod when the source file's history is unknown.
 # Why this matters: mtime is NOT a publication date. A fresh `git clone` or a
 # GitHub Actions checkout stamps every file with "now", so an mtime-derived
@@ -92,6 +106,155 @@ EXCLUDE_REASON = "analyst_policy is bias-labeled personal political position, no
 SITE_REDACT = False
 
 # file stem -> (nav label, short slug dir, description)
+#
+# PLAIN TITLES [analyst 2026-11-07]: several kit topics are titled in framework
+# internal shorthand -- "Form -- Democracy-fake", "T9 in Politics", "L4 Mimicry".
+# Those titles are correct as internal vocabulary and are NOT rewritten: the kit
+# body, the .txt source, the slug, and the on-page internal label all keep the
+# original term. Only the <title>, the <h1>, and the search listing use a plain
+# form, because those are the three surfaces a searcher or a crawler reads.
+# Key = the topic title the parser produces, uppercased. Value = plain form.
+# Add rows here rather than renaming topics at source.
+PLAIN_TITLES = {
+    # ---- disorder / order form pages
+    "FORM -- DEMOCRACY-FAKE":
+        "Why voting feels pointless — fake democracy",
+    "FORM -- FAKE-SPECTRUM-CRAZY-FILTER":
+        "Why both parties look the same — fake spectrum",
+    "FORM -- CHARITY-LEGITIMACY-EXPORT":
+        "When charity laundering buys legitimacy",
+    "FORM -- CORP-GOD-METRIC":
+        "When the company only serves the number",
+    "FORM -- CREDENTIAL-EXPERTISE-FAKE":
+        "Fake credentials and borrowed expertise",
+    "FORM -- COUNTER-HYPERSTITION-PRAXIS":
+        "Countering a made-up belief with action",
+    "FORM -- DISTRIBUTED-CORRECTION-PATH":
+        "How correction works without a central authority",
+    "FORM -- EMPIRE-NODE":
+        "Empire as a network of nodes",
+    "FORM -- FARM-CLEAN-REMEDIATION":
+        "Cleanup that only looks like remediation",
+    "FORM -- HONEST-NON-DEMO":
+        "Non-democratic systems that still self-correct",
+    "FORM -- HYPERSTITION-DEFEAT-NARRATIVE":
+        "How a defeat narrative protects the belief",
+    "FORM -- KINGDOM-ILLUSION-GOD":
+        "The kingdom built on an illusion",
+    "FORM -- KINGDOM-RECIPROCAL-GOD":
+        "Reciprocal order — the kingdom that gives back",
+    "FORM -- LEGACY-MORAL-MONOCULTURE":
+        "Moral monoculture inherited from the past",
+    "FORM -- LIBERALISM-PARTIAL-STATE-RELIGION":
+        "Liberalism as a partial state religion",
+    "FORM -- OIL-SUBSTRATE-LOCK":
+        "Oil dependency as a locked substrate",
+    "FORM -- OPEN-RECORD-FALSIFICATION-CULTURE":
+        "Open records that let a culture falsify itself",
+    "FORM -- PROPORTIONAL-LIABILITY":
+        "Proportional liability instead of blame-all",
+    "FORM -- PUNDIT-VISIBILITY-CURSE":
+        "Why pundits get worse as they get famous",
+    "FORM -- RECIPROCAL-EXCHANGE":
+        "Reciprocal exchange — real give and take",
+    "FORM -- BB":
+        "Appetite with a job description — the core extraction form",
+    "FORM TAGS":
+        "Tags used to label disorder and order forms",
+    "FORM -- SHIELD PULL":
+        "Pulling the shield — protection used as leverage",
+    "FORM -- SOVEREIGN-AS-ORDER":
+        "The sovereign as the source of order",
+    "FORM -- STATE RELIGION":
+        "State religion and enforced belief",
+    "FORM -- TEAM-JERSEY-ORDER-COSTUME":
+        "Team jersey order — costume instead of substance",
+    "FORM -- TOTALITARIAN":
+        "Totalitarian control — how it actually runs",
+    "FORM -- WELFARE-FLOOR-IN-KIND":
+        "Welfare paid in kind instead of cash",
+    "FORM -- AEC-RATIFICATION-CHAIN":
+        "How ratification chains manufacture consent",
+    "FORM CATALOG":
+        "Catalog of disorder and order forms",
+    "BB-FUNCTION":
+        "Appetite with a job description — the core extraction pattern",
+
+    # ---- level / capacity codes
+    "T9 IN POLITICS":
+        "Why government never fixes anything",
+    "T9 SOFT EXPOSURE METHODS":
+        "How to name a limit without being destroyed",
+    "T3 CALIBRATION":
+        "Calibrating an unsure read",
+    "L4 MIMICRY":
+        "Institutions that only pretend to self-correct",
+    "L4.5 CIVILIZATIONAL TRANSMISSION THRESHOLD":
+        "Can a method survive past one generation",
+    "L3.5 CONTACT TYPE MUST MATCH INSTRUMENT FRICTION AXIS":
+        "Why the right help only works from the right angle",
+    "C1 STARVED RECOVERY REQUIRES L3.5 CONTACT":
+        "Why starving systems cannot recover alone",
+    "PRE-RESTORATION C1 AUDIT PROCEDURE":
+        "How to check a system before trying to fix it",
+    "HONEST LIMITS T1-T9":
+        "The nine honest limits on what a read can resolve",
+    "SCIENCE T4 READ":
+        "How to read a science news story",
+    "SR/SP SUBSTRATE READ":
+        "Reading the substrate a system runs on",
+    "CAG + MI CORRECTION STACK":
+        "The correction stack — capacity plus mechanism",
+    "SUB-NATIONAL LEGITIMACY PRESERVATION + T9 COUNTER":
+        "How local legitimacy survives central decay",
+
+    # ---- pathos lane (sophist). These pages had zero search routes before
+    # 2026-11-07 and titles built from internal register language. Plain titles
+    # below; the pathos term stays visible as the pill.
+    "CERTAINTY-CHASE FALL":
+        "Why facts rarely change minds — the certainty chase",
+    "CORRECTION WITHOUT CLINGING":
+        "How to correct someone without humiliating them",
+    "PEACE AS NON-RESISTANCE":
+        "Why people resist being helped — non-resistance",
+    "EMBODIED PRAXIS PATHOS":
+        "Emotional labour and practice — feeling as work",
+    "OFFICE AS BURDEN":
+        "Why power feels like a burden, not a reward",
+    "AMBIGUITY-CENTER AND FREEDOM":
+        "Why freedom feels like anxiety",
+    "MANIFEST-SALIENCE ASYMMETRY":
+        "Why people believe made-up things",
+    "FILE REGISTER AND FIREWALL":
+        "Why being certain feels good — register and firewall",
+    "LOGOS EXPORT":
+        "What makes an argument persuasive",
+    "DECOY PROGRESS AND STUPID VERSION":
+        "Fake progress and the stupid version of an idea",
+    "MORAL CUBE":
+        "The moral cube — mapping a dispute",
+    "DIVINE REGISTER DESK LADDER":
+        "The divine register — how sacred language gets used",
+    "ONTOLOGY-BRACKETED PHENOMENOLOGY VALUE":
+        "Value without metaphysics — bracketing what exists",
+    "EPISTEMIC BAND PATHOS ORIENT":
+        "How sure can you be — the epistemic bands",
+
+    # ---- project shorthand (AEC = applied extraction case series)
+    "AEC FUNDAMENTALS AND SCALE APPLICATION":
+        "Extraction cases — fundamentals and how it scales",
+    "AEC DEMOCRACY VALUES AND INSTRUMENT LADDER":
+        "Democracy values versus the instrument ladder",
+    "AEC ANALYST STEELMAN NOTES":
+        "Steelman notes on extraction cases",
+    "AEC THREE-LEG NORMAL UNDERSTANDING":
+        "The three-leg model of normal understanding",
+    "BI/MI CO-FAILURE PATTERN":
+        "When two correction routes fail together",
+    "MI YOUTH LEMONADE STAND HB 6007":
+        "Michigan lemonade stand law HB 6007",
+}
+
 KIT = [
     ("coherence_framework_v25_beginner", "Beginner", "read/beginner",
      "Vocabulary and kit map. Start here with no prior framework terms."),
@@ -816,34 +979,48 @@ def main():
                 slug = f"{base}-{i+1}"
             used.add(slug)
             p = f"{subdir}/{slug}.html"
-            desc = excerpt(body, 300) or f"{title} — {flabel}"
+            # Internal title (title) drives the slug and stays as the kit wrote it.
+            # Display title (shown) is the plain-language form where one exists.
+            # Keeping them separate is the whole point: the URL and the kit
+            # vocabulary do not change, only what a searcher reads.
+            shown = PLAIN_TITLES.get(title.upper(), title)
+            desc = excerpt(body, 300) or f"{shown} — {flabel}"
             text = "\n".join(body).strip("\n")
             jsonld = {
                 "@context": "https://schema.org",
                 "@type": "Article",
-                "headline": title,
+                "headline": shown,
                 "description": desc[:300],
                 "url": f"{ORIGIN}{href(p)}",
                 "isPartOf": {"@type": "WebSite", "name": SITE_NAME,
                              "url": f"{ORIGIN}{href('')}"},
                 "license": "https://creativecommons.org/publicdomain/zero/1.0/",
             }
+            # The internal term is kept visible as a small label so the page still
+            # teaches the kit's own name for the thing. Nothing is hidden from the
+            # reader; the plain title is an addition, not a substitution.
+            internal = ("" if shown == title else
+                        f'<span class="pill">{html.escape(title)}</span>')
             body_html = (
-                f'<h1>{html.escape(title)}</h1>'
-                f'<div class="meta"><span class="pill">{html.escape(label)}</span>'
+                f'<h1>{html.escape(shown)}</h1>'
+                f'<div class="meta">{internal}<span class="pill">{html.escape(label)}</span>'
                 f'<a href="{href(file_page(stem))}">full file</a></div>'
                 f'<pre class="kit">{html.escape(redact(text))}</pre>'
                 f'<p><a href="{href(subdir + "/index.html")}">More {html.escape(label)}</a> · '
                 f'<a href="{href("read/beginner.html")}">Start here</a></p>'
             )
             crumb = crumb_html([("Home", ""), (label, f"{subdir}/index.html"),
-                                (title[:60], None)])
-            page(p, f"{title} — {SITE_NAME}", desc, body_html, crumb, jsonld)
+                                (shown[:60], None)])
+            page(p, f"{shown} — {SITE_NAME}", desc, body_html, crumb, jsonld)
             sitemap.append((p, mtime))
-            search_idx.append((title, p, label.lower()))
-            all_topics.append((label, subdir, slug, title, p, desc))
+            search_idx.append((shown, p, label.lower()))
+            # Search/listing shows the plain form; the kit term is searchable too
+            # via the existing site search payload (both are indexed below).
+            all_topics.append((label, subdir, slug, shown, p, desc))
             TOPIC_PAGES.setdefault(title.upper(), p)
-            items.append((title, p, desc))
+            if shown != title:
+                TOPIC_PAGES.setdefault(shown.upper(), p)
+            items.append((shown, p, desc))
 
         li = "".join(
             f'<li data-s="{html.escape(t.lower())}">'
@@ -1174,6 +1351,7 @@ and can it be corrected by evidence?</p>
     lines_xml = ['<?xml version="1.0" encoding="UTF-8"?>',
                  '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
     seen = set()
+    seen_locs = []        # (absolute url, lastmod) — input for the IndexNow manifest
     for p, lm in sitemap:
         if p in seen:
             continue
@@ -1192,9 +1370,35 @@ and can it be corrected by evidence?</p>
         lines_xml.append(
             f"<url><loc>{ORIGIN}{href(loc)}</loc>"
             f"<lastmod>{lm}</lastmod></url>")
+        seen_locs.append((f"{ORIGIN}{href(loc)}", lm))
     lines_xml.append("</urlset>")
     with open(os.path.join(OUT, "sitemap.xml"), "w", encoding="utf-8") as f:
         f.write("\n".join(lines_xml))
+
+    # ---- IndexNow key file
+    # Must sit at the site root and must contain nothing but the key. Bing and
+    # the other IndexNow engines fetch this once to prove the submitter controls
+    # the host. Written by the build because docs/ is gitignored and regenerated,
+    # so a hand-uploaded copy would 404 after the next deploy.
+    if INDEXNOW_KEY:
+        if not re.fullmatch(r"[A-Za-z0-9-]{8,128}", INDEXNOW_KEY):
+            raise SystemExit(
+                f"INDEXNOW_KEY is malformed: {INDEXNOW_KEY!r}. "
+                "IndexNow requires 8-128 chars of a-z, A-Z, 0-9, and dashes.")
+        with open(os.path.join(OUT, f"{INDEXNOW_KEY}.txt"), "w",
+                  encoding="utf-8") as f:
+            f.write(INDEXNOW_KEY)
+
+    # ---- lastmod manifest for incremental IndexNow pings
+    # One line per URL: "<lastmod> <url>". The deploy workflow downloads the
+    # previous deployment's copy, diffs it against this one, and pings IndexNow
+    # with only the URLs whose date actually moved. Without this the workflow
+    # would either ping all 1851 URLs on every push (wasteful, and IndexNow's own
+    # guidance is to send only changed URLs) or ping nothing (no benefit).
+    # Underscore prefix keeps it out of the sitemap and off the 404 path.
+    with open(os.path.join(OUT, "_indexnow.txt"), "w", encoding="utf-8") as f:
+        for url, lm in sorted(seen_locs, key=lambda x: x[1]):
+            f.write(f"{lm} {url}\n")
 
     n_files = sum(len(fs) for _, _, fs in os.walk(OUT))
     print(f"built {n_files} files into docs/")
