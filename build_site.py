@@ -19,6 +19,7 @@ import json
 import os
 import re
 import shutil
+import subprocess
 import time
 from datetime import datetime, timezone
 
@@ -46,6 +47,23 @@ ORIGIN = os.environ.get("SITE_ORIGIN", "https://poehl60.github.io")
 # Emitted as a <meta> tag on every page, so verification survives rebuilds.
 # It is a public identifier, not a secret. Set to "" to drop it.
 GOOGLE_VERIFY = "5DBmhSs7USDDh5AoE4rybj9K0il1noBed9oylSnOzrI"
+
+# Bing Webmaster Tools ownership proof. Same public-identifier logic as above.
+# Paste the content="" value from Bing's "HTML meta tag" verification option.
+# Empty means no tag is emitted — Bing can still verify via an XML file it drops
+# at the site root (BingSiteAuth.xml) or via importing from Search Console.
+BING_VERIFY = ""
+
+# Fallback lastmod when the source file's history is unknown.
+# Why this matters: mtime is NOT a publication date. A fresh `git clone` or a
+# GitHub Actions checkout stamps every file with "now", so an mtime-derived
+# lastmod tells a crawler "all 1851 pages changed today" on every single build.
+# Google discounts a lastmod it can prove is untrustworthy, which slows recrawl.
+# Order of preference per source file:
+#   1. `git log -1 --format=%cs` — the actual last commit date (CI has history).
+#   2. Filesystem mtime — only when not in a git repo (local scratch build).
+#   3. This constant — last resort.
+LASTMOD_FALLBACK = "2026-11-06"
 
 # Canonical public home of the source. Linked from every page footer so the
 # site and the repo point at each other (helps discovery both directions).
@@ -574,13 +592,17 @@ def page(path, title, desc, body, crumb="", jsonld=None, noindex=False):
     if jsonld:
         ld = ('<script type="application/ld+json">'
               + json.dumps(jsonld, ensure_ascii=False) + "</script>")
+    # Bing verification tag, emitted only when BING_VERIFY is filled in. Kept on
+    # a single line with no stray whitespace so it is copy-exact for the crawler.
+    bing = (f'<meta name="msvalidate.01" content="{BING_VERIFY}" />\n'
+            if BING_VERIFY else "")
     doc = f"""<!doctype html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="google-site-verification" content="{GOOGLE_VERIFY}" />
-<title>{html.escape(title)}</title>
+{bing}<title>{html.escape(title)}</title>
 <meta name="description" content="{html.escape(desc)}">
 {robots}
 <link rel="canonical" href="{canonical}">
@@ -627,6 +649,34 @@ def page(path, title, desc, body, crumb="", jsonld=None, noindex=False):
         f.write(doc)
 
 
+def source_lastmod(filename):
+    """Real publication date for a source file, not filesystem mtime.
+
+    See LASTMOD_FALLBACK for why mtime is unusable: a fresh checkout makes every
+    file look modified today, and a sitemap that says "everything changed today"
+    on every build trains the crawler to ignore lastmod entirely.
+
+    `git log -1 --format=%cs -- <file>` returns the committer date of the last
+    commit touching that file, which is what a reader would call "when this
+    content last changed". CI checks out with full history by default, so this
+    works there; a local build outside git falls back to mtime.
+    """
+    src = os.path.join(ROOT, filename)
+    try:
+        out = subprocess.run(
+            ["git", "log", "-1", "--format=%cs", "--", src],
+            cwd=ROOT, capture_output=True, text=True, timeout=10,
+        ).stdout.strip()
+        if re.fullmatch(r"\d{4}-\d{2}-\d{2}", out):
+            return out
+    except (OSError, subprocess.SubprocessError):
+        pass
+    if os.path.isfile(src):
+        return datetime.fromtimestamp(
+            os.path.getmtime(src), timezone.utc).date().isoformat()
+    return LASTMOD_FALLBACK
+
+
 def crumb_html(parts):
     bits = []
     for label, path in parts:
@@ -663,6 +713,11 @@ def main():
     search_idx = []       # (title, path, kind)
     problems_nav = []
 
+    # Lastmod for the generated/navigation pages below, which have no kit source
+    # of their own. Derived from INDEX.md, the file those pages are built from,
+    # so their date moves only when their actual input moves.
+    index_lastmod = source_lastmod("INDEX.md")
+
     all_topics = []       # (file label, dir, slug, title, path, desc)
     all_cases = []        # (kind, slug, title, path, desc, case_id)
 
@@ -673,7 +728,7 @@ def main():
             continue
         with open(src, encoding="utf-8", errors="replace") as f:
             lines = f.read().splitlines()
-        mtime = datetime.fromtimestamp(os.path.getmtime(src), timezone.utc).date().isoformat()
+        mtime = source_lastmod(stem + ".txt")
 
         if subdir in ("cases", "fiction"):
             kind = "real case" if subdir == "cases" else "fiction case"
@@ -897,7 +952,7 @@ def main():
              f"{', '.join(p for p, _, _ in body_rows[:4])}.",
              body, crumb_html([("Home", ""), ("Problems", "problems/index.html"),
                                (name, None)]))
-        sitemap.append((f"problems/{slug}.html", "2026-11-06"))
+        sitemap.append((f"problems/{slug}.html", index_lastmod))
 
     pli = "".join(
         f'<li><a href="{href(p_)}">{html.escape(n)}</a>'
@@ -911,7 +966,7 @@ def main():
          f'not "Coherence Framework." Each cluster maps the phrasings someone '
          f'actually types to a reading.</div><ul class="list">{pli}</ul>',
          crumb_html([("Home", ""), ("Problems", None)]))
-    sitemap.append(("problems/index.html", "2026-11-06"))
+    sitemap.append(("problems/index.html", index_lastmod))
     search_idx.append(("Problems", "problems/index.html", "index"))
 
     # ---- all-topics index
@@ -933,7 +988,7 @@ def main():
          "document.querySelectorAll('ul.list li').forEach(li=>{"
          "li.style.display=li.dataset.s.includes(q)?'':'none'})});</script>",
          crumb_html([("Home", ""), ("All topics", None)]))
-    sitemap.append(("topics/index.html", "2026-11-06"))
+    sitemap.append(("topics/index.html", index_lastmod))
     search_idx.append(("All topics", "topics/index.html", "index"))
 
     # ---- site search
@@ -1035,7 +1090,7 @@ def main():
              "What the published Coherence Framework contains, how it differs "
              "from the current working copy, and what is never published.",
              vers_body, crumb_html([("Home", ""), ("Versions", None)]))
-        sitemap.append(("versions.html", "2026-11-06"))
+        sitemap.append(("versions.html", source_lastmod("VERSIONS.md")))
         search_idx.append(("Versions", "versions.html", "index"))
 
     # ---- home
@@ -1078,15 +1133,36 @@ and can it be corrected by evidence?</p>
          "or design generate more than it consumes, or consume while looking like it "
          "generates? Problem-indexed case library, CC0.",
          home)
-    sitemap.append(("", "2026-11-06"))
+    sitemap.append(("", index_lastmod))
     search_idx.append(("Home", "index.html", "index"))
 
     # ---- 404, robots, sitemap, .nojekyll
+    # Legacy-path rescue. The site moved from the project path /Framework/ to the
+    # user-site root when the repo was renamed Framework -> poehl60.github.io.
+    # Every old /Framework/... URL now hard-404s, and the repo README still links
+    # to /Framework/ , so real readers land here. There is no server on GitHub
+    # Pages, so the only redirect available is client-side: map the known old
+    # prefix onto the matching root path and replace the history entry so the
+    # 404 URL does not linger in the back button.
+    # This runs on the 404 page only; it costs nothing on a normal page load.
+    legacy_redirect = f"""
+<script>
+(function () {{
+  var p = location.pathname, old = '/framework';
+  var lp = p.toLowerCase();
+  if (lp === old || lp.indexOf(old + '/') === 0) {{
+    var rest = p.slice(old.length) || '/';
+    var q = location.search + location.hash;
+    location.replace('{ORIGIN}' + rest + q);
+  }}
+}})();
+</script>"""
     page("404.html", f"Not found — {SITE_NAME}",
          "Page not found.",
          f'<h1>Not found</h1><p>That page does not exist. '
          f'<a href="{href("search.html")}">Search</a> or '
-         f'<a href="{href("")}">start over</a>.</p>',
+         f'<a href="{href("")}">start over</a>.</p>'
+         + legacy_redirect,
          noindex=True)
 
     with open(os.path.join(OUT, "robots.txt"), "w", encoding="utf-8") as f:
