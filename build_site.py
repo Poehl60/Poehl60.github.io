@@ -436,6 +436,21 @@ def parse_topics(lines):
                                  if ln.strip()]
                         j = k - 1
             if not parts:
+                # Blank-line-split title [added 2026-11-07]: analyst_policy has a
+                # wrapped heading with an empty line inside it, so the scan above
+                # stopped at the blank and captured only the tail ("]"). Scan up
+                # past blanks to the column-0 heading that actually has letters.
+                # Without this a page is published titled "]" at /topic-142.html.
+                if j >= 0 and not lines[j].strip():
+                    k = j
+                    while k >= 0 and not lines[k].strip():
+                        k -= 1
+                    if k >= 0 and lines[k].strip() and not lines[k].startswith(" ") \
+                            and not SEP.match(lines[k].rstrip()) \
+                            and not BANNER.match(lines[k]) and not CASE.match(lines[k]):
+                        parts = [lines[k].strip()]
+                        j = k - 1
+            if not parts:
                 continue
         start = j + 1
         parts.reverse()
@@ -1051,8 +1066,29 @@ def main():
         items = []
         for i, (raw_title, body) in enumerate(topics):
             title = smart_case_title(clean_title(raw_title)) or f"{label} {i+1}"
-            if len(title) < 4:
-                title = raw_title.strip()
+            # A title with no letters is not a title. Seen in analyst_policy: a
+            # wrapped heading split by a BLANK line, whose tail was a lone "]"
+            # directly above the dash rule -> page called "]" at /topic-142.html.
+            # Scan up past blank and punctuation-only lines for the real column-0
+            # heading. Stop at an indented line (that is body, not title) and at
+            # any rule/banner/case anchor. A bare "]" is unsearchable and the
+            # slug "topic-142" tells a crawler nothing either.
+            if sum(c.isalpha() for c in title) < 3:
+                first = next((ln.strip().lstrip("*# ").strip()
+                              for ln in body if ln.strip()), "")
+                if sum(c.isalpha() for c in first) >= 3:
+                    title = first[:90]
+                else:
+                    title = f"{label} {i+1}"
+            # Guard against a title that is only the surviving TAIL of a heading
+            # split by a blank line: "... [analyst chat -- \n\n bias-labeled]".
+            # The kit source has been repaired for the three cases found, but the
+            # shape can recur, and a title starting lowercase with a dangling "]"
+            # is unsalvageable in search. Strip the dead bracket and capitalise.
+            if title.count("]") > title.count("["):
+                title = title.replace("]", "").strip()
+                if title and title[0].islower():
+                    title = title[0].upper() + title[1:]
             base = slugify(title, f"topic-{i+1}")
             slug = base
             if slug in used:
@@ -1109,6 +1145,13 @@ def main():
             if shown != title:
                 TOPIC_PAGES.setdefault(shown.upper(), p)
             items.append((shown, p, desc))
+
+        # Files with no parsed topics (case hub redirect, grep line maps) would
+        # emit two empty pages: /dir/index.html and /dir.html, both showing a
+        # "0 entries" list. Skip them rather than publishing thin duplicates
+        # that compete with each other for the same query [2026-11-07].
+        if not items:
+            continue
 
         li = "".join(
             f'<li data-s="{html.escape(t.lower())}">'
@@ -1210,6 +1253,34 @@ def main():
     search_idx.append(("Problems", "problems/index.html", "index"))
 
     # ---- all-topics index
+    # Full-file reading pages get their inbound link here. Previously the only
+    # link to a file page came from one of its own topic pages, so files with no
+    # topics (cf_grep, the case hub) were orphaned: in the sitemap, unlinked, and
+    # therefore barely crawlable. /topics/ is linked from the nav on every page,
+    # so this makes every file page reachable in one hop from anywhere.
+    #
+    # Case libraries are the exception: they have no topics, so they never emit a
+    # file_page() and file_page("..._cases_real") -> read/cases-real.html does not
+    # exist. Their real landing page is the per-library index built in the KIT
+    # loop. Link that instead of a 404 [bug found 2026-11-07].
+    _flinks = []
+    for _stem, _label, _subdir, _flabel in KIT:
+        if not os.path.isfile(os.path.join(ROOT, _stem + ".txt")):
+            continue
+        if _subdir in ("cases", "fiction"):
+            _flinks.append(
+                f'<li><a href="{href(_subdir + "/index.html")}">'
+                f'{html.escape(_label)}</a>'
+                f'<span class="k">all cases · searchable by name</span></li>')
+        else:
+            # Only link a full-file page that the build actually produced. Files
+            # with no parsed topics are skipped above and have no such page.
+            if not os.path.isfile(os.path.join(OUT, file_page(_stem))):
+                continue
+            _flinks.append(
+                f'<li><a href="{href(file_page(_stem))}">{html.escape(_label)}</a>'
+                f'<span class="k">full file · every topic in reading order</span></li>')
+    file_links = "".join(_flinks)
     tli = "".join(
         f'<li data-s="{html.escape((t + " " + lab).lower())}">'
         f'<a href="{href(p_)}">{html.escape(t)}</a>'
@@ -1223,6 +1294,9 @@ def main():
          f'{len(all_cases)} case pages</div>'
          f'<input class="filter" placeholder="Filter {len(all_topics)} topics…">'
          f'<ul class="list">{tli}</ul>'
+         f'<h2>Full files</h2>'
+         f'<div class="meta">Each kit .txt as one readable page.</div>'
+         f'<ul class="list">{file_links}</ul>'
          "<script>const f=document.querySelector('.filter');"
          "f.addEventListener('input',()=>{const q=f.value.toLowerCase();"
          "document.querySelectorAll('ul.list li').forEach(li=>{"
