@@ -176,7 +176,11 @@ def slugify(text: str, fallback: str = "item") -> str:
     s = s.replace("&", " and ")
     s = re.sub(r"[^a-z0-9]+", "-", s).strip("-")
     s = re.sub(r"-{2,}", "-", s)
-    return (s or fallback)[:80].strip("-") or fallback
+    # Truncate BEFORE the final strip: slicing at 80 can land on a hyphen and
+    # leave a trailing "-" in the slug, which 404s because the file on disk is
+    # named without it [found 2026-11-06: 3 sitemap URLs ended mid-word].
+    s = (s or fallback)[:80].strip("-")
+    return s or fallback
 
 
 PRIVATE_PATH = re.compile(
@@ -561,7 +565,7 @@ def page(path, title, desc, body, crumb="", jsonld=None, noindex=False):
     if path == "index.html":
         canonical = f"{ORIGIN}{href('')}"
     elif path.endswith("/index.html"):
-        canonical = f"{ORIGIN}{href(path[:-len('index.html')])}"
+        canonical = f"{ORIGIN}{href(path[:-len('/index.html')] + '/')}"
     else:
         canonical = f"{ORIGIN}{href(path)}"
     robots = ('<meta name="robots" content="noindex,follow">' if noindex
@@ -1101,7 +1105,14 @@ and can it be corrected by evidence?</p>
         # Directory index pages are canonically the directory form (see page()).
         # Emitting "/dir/index.html" here while the page canonicals to "/dir/"
         # is a contradiction Search Console reports as an error.
-        loc = p[:-len("index.html")] if p.endswith("index.html") else p
+        # Guard the "/" so a file legitimately named "...-index.html" (a slug
+        # that ends in the word "index") is not mangled into a trailing hyphen
+        # with no matching file on disk [bug found 2026-11-06: 3 dead URLs].
+        loc = p
+        if p == "index.html":
+            loc = ""
+        elif p.endswith("/index.html"):
+            loc = p[:-len("index.html")]
         lines_xml.append(
             f"<url><loc>{ORIGIN}{href(loc)}</loc>"
             f"<lastmod>{lm}</lastmod></url>")
