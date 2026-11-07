@@ -29,8 +29,18 @@ ROOT = _HERE if os.path.basename(_HERE) != "scripts" else os.path.dirname(_HERE)
 OUT = os.path.join(ROOT, "docs")
 
 SITE_NAME = "Coherence Framework"
-BASE = "/Framework"                       # GitHub Pages project path
-ORIGIN = "https://poehl60.github.io"
+
+# URL prefix for the deployed site [analyst 2026-11-06].
+#   ""            -> https://poehl60.github.io/            (user site repo, root property)
+#   "/Framework"  -> https://poehl60.github.io/Framework/  (project repo, subpath property)
+# Every URL in the build derives from this one constant: canonicals, sitemap,
+# robots, og:image, breadcrumbs, internal links, and the site-search payload.
+# A root site is the correct target because Google only reads robots.txt at the
+# host root, and Search Console only offers the robots.txt report for root-level
+# properties — a subpath property reports "could not be read" for a valid sitemap.
+# Override per-build with SITE_BASE (e.g. SITE_BASE=/Framework python3 ...).
+BASE = os.environ.get("SITE_BASE", "")
+ORIGIN = os.environ.get("SITE_ORIGIN", "https://poehl60.github.io")
 
 # Google Search Console ownership proof [analyst 2026-11-06].
 # Emitted as a <meta> tag on every page, so verification survives rebuilds.
@@ -533,13 +543,27 @@ def file_page(stem: str) -> str:
 
 
 def href(path: str) -> str:
+    """Absolute-path URL for a site-relative path, honoring BASE.
+
+    BASE="" is the root deploy; BASE="/Framework" is the subpath deploy.
+    Empty path -> site root ("/" or "/Framework/")."""
+    if not path:
+        return f"{BASE}/"
     return f"{BASE}/{path}"
 
 
 def page(path, title, desc, body, crumb="", jsonld=None, noindex=False):
     full = os.path.join(OUT, path)
     os.makedirs(os.path.dirname(full), exist_ok=True)
-    canonical = f"{ORIGIN}{href(path)}"
+    # Directory index pages are served at both "/dir/" and "/dir/index.html".
+    # Point the canonical at the directory form so the pair does not compete as
+    # duplicate URLs [fixed 2026-11-06 alongside the homepage].
+    if path == "index.html":
+        canonical = f"{ORIGIN}{href('')}"
+    elif path.endswith("/index.html"):
+        canonical = f"{ORIGIN}{href(path[:-len('index.html')])}"
+    else:
+        canonical = f"{ORIGIN}{href(path)}"
     robots = ('<meta name="robots" content="noindex,follow">' if noindex
               else '<meta name="robots" content="index,follow">')
     ld = ""
@@ -946,7 +970,7 @@ def main():
             # link kit filenames to their live site pages
             s = re.sub(
                 r"(?<![\w/`>])((?:coherence_framework_v25_[a-z0-9_]+|cf_grep)\.txt)",
-                r'<a href="/Framework/read/\1">\1</a>', s)
+                r'<a href="' + BASE + r'/read/\1">\1</a>', s)
             return redact(s)
 
         for line in raw.splitlines():
@@ -1050,7 +1074,7 @@ and can it be corrected by evidence?</p>
          "or design generate more than it consumes, or consume while looking like it "
          "generates? Problem-indexed case library, CC0.",
          home)
-    sitemap.append(("index.html", "2026-11-06"))
+    sitemap.append(("", "2026-11-06"))
     search_idx.append(("Home", "index.html", "index"))
 
     # ---- 404, robots, sitemap, .nojekyll
@@ -1074,8 +1098,12 @@ and can it be corrected by evidence?</p>
         if p in seen:
             continue
         seen.add(p)
+        # Directory index pages are canonically the directory form (see page()).
+        # Emitting "/dir/index.html" here while the page canonicals to "/dir/"
+        # is a contradiction Search Console reports as an error.
+        loc = p[:-len("index.html")] if p.endswith("index.html") else p
         lines_xml.append(
-            f"<url><loc>{ORIGIN}{href(p)}</loc>"
+            f"<url><loc>{ORIGIN}{href(loc)}</loc>"
             f"<lastmod>{lm}</lastmod></url>")
     lines_xml.append("</urlset>")
     with open(os.path.join(OUT, "sitemap.xml"), "w", encoding="utf-8") as f:
