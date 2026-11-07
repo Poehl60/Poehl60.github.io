@@ -22,7 +22,16 @@ Cross-ref: Personal/coherence_framework_v25_ABSTRACT.txt [Theory-of-Things / Ear
  history, census tables, council rows] does **not** enter this file.
  POLITICAL VS PERSONAL BOUNDARY [theory ANALYST NOTES]
  applied POLICY POSITIONS [stub pointer]; STRUCTURAL POLITICAL FINDINGS [applied].
-Orient: grep -n "^TOOL-USE ORIENTATION\|^ORIENTATION SCALE LADDER\|^LOGOS MORAL LEGALISM ORIENTATION\|^TOOL-WEAPON OPENING\|^NATIONAL RESOURCE AND USEFULNESS\|^MOST IN NATION WELLBEING\|^RESOURCE PANEL CHECKLIST\|^RESOURCE PANEL MEASUREMENT\|^RESOURCE PANEL GAMING PATTERNS\|^RESOURCE PANEL SERIOUS COUNTERPOINTS\|^RESOURCE PANEL EXTRACTION DOG-WHISTLE\|^RESOURCE PANEL METRIC PINS\|^NECESSITY BASKET PIN TABLE\|^NECESSITY BASKET STATUTE PINS\|^POLICY BULLETS\|^POLICY SLICES\|^PRIVATE HEALTH INSURANCE PAYMENT\|^ABUNDANCE TECH\|^WELFARE AND DIRECT PROVISION\|^DIVINE ELITE MANDATE\|^ORIENTATION\|^POLICY COMPASS\|^CONTRACT BAND EXPORT\|^ABSTRACT EARTH REGISTER EXPORT\|^ABSTRACT NATION DESK EXPORT\|^THEORY-OF-THINGS COUNTER REPLY\|^LAW TRACKS ENACTED FAILURE\|^AEC ANALYST STEELMAN\|^MUNICIPAL PROCUREMENT THRESHOLD\|^K-12 OUTCOMES FUNDING AND SPENDING TRANSPARENCY\|^STOLEN-YEARS SUBSTRATE EXTRACTION\|^SIMPLE FRANCHISE METER\|^TITLE II VAULT RHETORIC\|^TRIPLE LEDGER\|^NATION EXIT LANE\|^HISTORICAL GRIEVANCE\|^HARM VS FEELING" coherence_framework_v25_analyst_policy.txt
+ FALSIFIER FIRING AUTHORITY [standing rule -- analyst 2026-11-07; applies to every
+ `Falsifiers:` block in this file]: **a falsifier is a test, not a verdict, and it has
+ a reader.** ⇒ default reader = **the analyst on a manual chat audit**, plus **any
+ reader holding this file acting on a named claim** [one act, one record line]. ⇒
+ **no self-firing:** a row never executes because someone asserts it, and **a citation
+ alone buys nothing** -- the act and the record line are the read. ⇒ **a reader who
+ cannot name the act and the line has not found a falsifier; they have found a label.**
+ ⇒ `who audits` is answered here so it does not need restating per topic [**HOLE TEST**
+ -- a rule that needs a lawyer to locate its enforcer is the defect, not the guard].
+Orient: grep -n "^TOOL-USE ORIENTATION\|^ORIENTATION SCALE LADDER\|^LOGOS MORAL LEGALISM ORIENTATION\|^TOOL-WEAPON OPENING\|^NATIONAL RESOURCE AND USEFULNESS\|^MOST IN NATION WELLBEING\|^RESOURCE PANEL CHECKLIST\|^RESOURCE PANEL MEASUREMENT\|^RESOURCE PANEL GAMING PATTERNS\|^RESOURCE PANEL SERIOUS COUNTERPOINTS\|^RESOURCE PANEL EXTRACTION DOG-WHISTLE\|^RESOURCE PANEL METRIC PINS\|^NECESSITY BASKET PIN TABLE\|^NECESSITY BASKET STATUTE PINS\|^POLICY BULLETS\|^POLICY SLICES\|^PRIVATE HEALTH INSURANCE PAYMENT\|^ABUNDANCE TECH\|^WELFARE AND DIRECT PROVISION\|^DIVINE ELITE MANDATE\|^ORIENTATION\|^POLICY COMPASS\|^RUDIS BASIC FORM EXPORT\|^CONTRACT BAND EXPORT\|^ABSTRACT EARTH REGISTER EXPORT\|^ABSTRACT NATION DESK EXPORT\|^THEORY-OF-THINGS COUNTER REPLY\|^LAW TRACKS ENACTED FAILURE\|^AEC ANALYST STEELMAN\|^MUNICIPAL PROCUREMENT THRESHOLD\|^K-12 OUTCOMES FUNDING AND SPENDING TRANSPARENCY\|^STOLEN-YEARS SUBSTRATE EXTRACTION\|^SIMPLE FRANCHISE METER\|^TITLE II VAULT RHETORIC\|^TRIPLE LEDGER\|^NATION EXIT LANE\|^HISTORICAL GRIEVANCE\|^HARM VS FEELING" coherence_framework_v25_analyst_policy.txt
 ============================================================================================================================================
 
 TOOL-USE ORIENTATION [operative foundation -- analyst 2026-09-09; no social content]
@@ -156,6 +165,20 @@ ORIENTATION SCALE LADDER [official analyst policy -- chat 2026-11-02; not truth-
  use while **capture** keeps scalers -- **distinct lane** from **stupid-tool drop** [TOOL-USE
  stupid-tool test -- ruin/generate on **use**, not sermon]. Do not merge **fake moral spam**
  with honest **"drop this inventory"** audit.
+
+ **MID IS THE RESIDUAL, NOT A HEAD START [analyst 2026-11-07 -- correction to `default band`]:**
+ the `default band` wording above means **"not a moral verdict"** -- it does **not** mean
+ **"Mid is assigned before the record is read."** ⇒ **a rung is an audit result, and Mid is
+ the name for `no rung was earned`** when the read closes -- **not a presumption** taken
+ before it opens. ⇒ **the burden runs both ways:** charging **Evil** needs proof, and
+ **clearing to Mid as a favour needs the same proof.** ⇒ **an un-read actor is UNPLACED**,
+ not Mid-by-default -- and **unplaced is a live gap, not a clearance.** ⇒ **conduct and
+ instrument are what move a rung**; the jersey, the creed, the flag, the money, and the
+ office are **surfaces**, and **a surface is where a read STARTS, never where it ends.**
+ [Rhyme **MARXIST LABEL COLLAPSE** -- `brand ≠ Marxist` without proof; **ROUTING BOUNDARY
+ AND IDEOLOGY ORIENTATION** -- label vs Pipeline.] **Falsifier:** Mid is handed out as a
+ **favour** with no record read, or an actor is charged off a surface alone, ⇒ the residual
+ pin has failed [this line became the permission slip it was written to prevent].
  Cross-ref: order_truth ANALYST AXIS DOCTRINE; TOOL-USE ORIENTATION; MORALITY-POWER
  ORIENTATION; **LOGOS MORAL LEGALISM ORIENTATION**; [CASE:BROKEN_RUUNE] [#13 LOGOS-FIRST UPTAKE].
 
@@ -1529,9 +1552,9 @@ POLICY BULLETS [analyst policy -- operative positions]
  acting alone on a crime-row act ⇒ charged adult** [**age is not a discount on a crime-row act**].
  The **6-month cap stays** for everything **below** crime row [shoplift, school conduct, status
  offenses -- still juvenile lane]. ⇒ **two rails, one line:** **crime row = adult charging**,
- **sub-crime row = juvenile cap**. This is the **only** piece borrowed from Vis child-contact law
- [**VIS CHILD-CONTACT LAW** age bands]; the **soul/sanity register and mandatory visiting**
- do **not** transfer -- IRL nation band has no such substrate [policy is nation scope; Vis law is
+ **sub-crime row = juvenile cap**. This is the **only** piece borrowed from rudis child-contact law
+ [**RUDIS CHILD-CONTACT LAW** age bands]; the **soul/sanity register and mandatory visiting**
+ do **not** transfer -- IRL nation band has no such substrate [policy is nation scope; rudis law is
  mirror-only]. **Reason:** the cap is a **form constraint** [computable, non-discretionary
  sentencing], not a claim that a 16-year-old is harmless. Where **acts** are legible, the
  **adult rail** fires; where they are **conduct**, the cap holds.
@@ -1841,8 +1864,8 @@ POLICY BULLETS [analyst policy -- operative positions]
  Revenge porn: serious lesser tier; lasting documented harm.
  Grooming without contact; exposure; indecent communication
  [non-contact grooming]: proportionality each; not relabeled as rape to
- enter death path. **Severity delta [analyst 2026-11-06 -- deliberate, not drift]:** **Vis reads
- grooming harder than this policy does** [**VIS CHILD-CONTACT LAW** -- grooming = **tricky force**
+ enter death path. **Severity delta [analyst 2026-11-06 -- deliberate, not drift]:** **rudis reads
+ grooming harder than this policy does** [**RUDIS CHILD-CONTACT LAW** -- grooming = **tricky force**
  on the **mind line**, mental-band harm, and **the law gets fixed rather than defended** if the text
  lowers the mind line]. **Same diagnosis here, lower tier, and the reason is form:** a nation statute
  must be **computable and non-discretionary**, and **promoting grooming to death tier requires the
@@ -1893,6 +1916,26 @@ POLICY BULLETS [analyst policy -- operative positions]
  the **redaction basis printed on the release page** -- **not** a silent edit. **Retention
  posted**; **destruction is an event that publishes**. **Missing footage = the officer's
  finding to answer**, same as a missing panel row [p3 scoped: existed and withheld = fail].
+ **[2b] THE FOUR RELEASE STANDARDS ARE GENERAL -- NOT STREET-SCOPED [analyst 2026-11-07]:**
+ the four rules above are **not a police-policy detail**; they are **the bar this policy
+ already holds any producer of records to.**
+ | Standard | Form |
+ |----------|------|
+ | **1 -- Basis printed** | a redaction carries its **stated ground on the face of the release**; **silent edit = fail** |
+ | **2 -- Narrow grounds only** | **identifiable third parties + active investigation**; a **category** invented to withhold [privilege-class, tier-class, "stability"] is **not a ground** |
+ | **3 -- Missing is a finding** | **existed and withheld = fail**; **the holder answers**, not the requester |
+ | **4 -- Removal is an event** | **destruction / republish / un-publish PUBLISHES** -- a quiet deletion is itself the violation |
+ ⇒ **THE FINDING IS THE TIER COMPARISON [load-bearing]:** apply these to **any high-tier production**
+ [summit contact class, federal file release, corporate disclosure] and compare with the **street
+ standard above** ⇒ **if the high tier runs a redaction regime the street is FORBIDDEN to use, the
+ tiering is in the RULE, not in the actor.** ⇒ **no intent claim is needed and none is made:** **the
+ rule text is the evidence.** ⇒ rhyme **SUMMIT CONTACT IMMUNITY MEMBRANE**; **PROBE DEFERRAL**;
+ **HABITAT VS PERSON** [the shape, not a person].
+ ⇒ **and it beats the volume argument [why this is the stronger charge]:** **you cannot prove `small`
+ without a stated total** [`uncounting is the violation`] -- but **you CAN prove `existed and withheld`
+ from the production itself.** ⇒ **so the charge is `here are pages that existed; here is the
+ production; they do not match`** -- **restore the denominator, then compare** [**HABITAT VS PERSON**
+ -- the counter is restoring the denominator, not force and not argument].
  **[3] Civilian review -> use the sortition rules already pinned.** Review body =
  **SORTITION SELECTION RULES** [enrolled roll, public seed, duty not honor, one term,
  rotation, no packing]. **Removal power** = the panel may **remove an officer on a recorded
@@ -9713,9 +9756,7 @@ IMPORTED CRIMINAL REMOVAL [analyst policy -- chat 2026-09-06]
  T3 Medium: host-national sharp edge vs kit universal criminal-line wording
  analyst foreigner-indifference declared.
 
-DIASPORA BLOC VALIDATOR vs WOMEN'S CONTACT LEDGER [analyst chat 2026-10-10 --
-
-bias-labeled; operative position]
+DIASPORA BLOC VALIDATOR vs WOMEN'S CONTACT LEDGER [analyst chat 2026-10-10 -- bias-labeled; operative position]
 --------------------------------------------------------------------------------------------------------------------------------------------
  PERSONAL BIAS WARNING. Analyst operative pin -- not framework finding.
  Rhymes PATRON-CLIENT VALIDATOR; MAGIC SOIL ERROR; HONOR SUBSTRATE [cases
@@ -10288,6 +10329,39 @@ FUNDAMENTALIST ANALYST PRIOR [analyst policy -- chat 2026-08-02
  **C** operative-only; **D+** = pathos horror tail obstruction feeds -- worse-than-C
  **prior** bias-labeled, not E3; rhyme theory **PATHOS SUBSTITUTION**; sibling
  [CASE:EPSTEIN_NETWORK] **ZORRO GERMLINE DESK** BIAS (11).
+ **THE WANT QUESTION IS OPEN, NOT CLOSED [analyst 2026-11-07 -- corrects the ceiling read]:** the
+ release-ceiling pin above **implies** the want was settled. **It is not** -- and the evidence that
+ opens it is the **COSTLY SIGNAL: he pushed the law at real risk** [max-legibility exposure; see
+ **BUTLER** desk -- *coordination unproved*, so the shot is **not** evidence about the network, but it
+ **is** evidence about his preference]. ⇒ **a person who spends risk on a named instrument is not
+ indifferent to that instrument** ⇒ **`he does not want it` is now hard to hold.**
+ · **BUT THE LAW AND THE DUMP ARE DIFFERENT OBJECTS [load-bearing]:** **he bought the STATUTE; the
+ statute produced REDACTIONS.** ⇒ **the risk was paid for the first, not the second.** ⇒ **so the open
+ question is not `does he want release` -- it is `WHICH OBJECT DID HE BUY.`**
+ · **THREE POSITIONS, AND TWO ARE DISTINGUISHABLE BY POST-PASSAGE BEHAVIOR:**
+ | Position | Prediction |
+ |----------|------------|
+ | **Wanted full release; the law failed** | **keeps pushing enforcement AFTER the redactions become visible** |
+ | **Wanted the membrane** | **treats passage as the win and stops** |
+ | **Wanted only the appearance** | **does neither** -- and that is **worse than either** above |
+ ⇒ **so `does he want to` is NOT undecidable -- it is UNDECIDED**, and the discriminator is
+ **available and unread:** **post-passage behavior against a stated line.** ⇒ **that is the
+ `proven, never vibed` bar** [**RUDIS BASIC FORM EXPORT** row 6a] applied to a public actor: **name the
+ instrument, observe the act, do not infer from feeling.**
+ ⇒ **do not read the costly signal as absolution:** it clears `indifference`, **not** `intent about the
+ dump`, and **not** the ceiling -- **the graph-cost pin still stands as a claim about why full routing
+ is not best-for-principal**, whether or not he wanted it.
+ **WHY LAW CANNOT FORCE THE DUMP [analyst 2026-11-07 -- the mechanism, not the mystery]:** **the
+ statute SPECIFIES the redactions** [privilege, victim-order] ⇒ **redaction is a LAWFUL act performed by
+ the same system the files expose** ⇒ **enforcement of the release law belongs to the network being
+ released** ⇒ **so `the files are not out and the law is out` is not a scandal of will -- it is the law
+ working as written.** ⇒ rhyme **LEGAL PREFIX WITHOUT LOGOS BENCH** [procedure, no bench] and
+ **Templar** [the mechanism produces an output that looks like transparency and functions as a membrane].
+ ⇒ **and it is `HABITAT VS PERSON` exactly:** **harm real, no one did it, and the mechanism that would
+ produce the output IS the mechanism under review** ⇒ **a purge would not fix it and a prosecutor would
+ not either** -- **the shape has to be rewritten, by the shape that would have to rewrite it.**
+ ⇒ **what would actually force it is the one thing missing: an OUTSIDE BENCH** -- not a court, **a body
+ that can check whether the redaction matched the claim**, operating on **a record it did not author.**
  **HUMAN GENETICS GOVERNANCE GAP [analyst chat 2026-10-11 -- operative position]:**
  Law should treat **human germline weirdness** [edit, clone-for-birth, non-critical
  enhancement, de-extinction human-adjacent lines] as **banned** unless **critical
@@ -10841,6 +10915,63 @@ ORIENTATION [analyst policy -- colloquial register]
  treaty among nations; DEME fog = **international** without demos [DEME **NATION-
  LEGIBLE vs INTERNATIONAL-FOG**; STEELMAN [10]]. Cross-ref: AEC FUNDAMENTALS
  AND SCALE APPLICATION; DIVINE ELITE MANDATE EXTRACTION [DEME].
+
+RUDIS BASIC FORM EXPORT [Theory-of-Things pointer -- analyst policy -- chat 2026-11-07]
+--------------------------------------------------------------------------------------------------------------------------------------------
+ PERSONAL BIAS WARNING. Analyst policy -- not framework finding. **Class:** **Theory-of-Things**
+ register [sibling ToT pointer]. **Canonical prose lives in ABSTRACT only** -- this topic carries
+ **the basic shape as enforceable rows**, not cosmology, not territory, not census, not council.
+ **NO FULL ABSTRACT IN POLICY [analyst 2026-11-05]:** canon body stays in
+ `Personal/coherence_framework_v25_ABSTRACT.txt`; grep there for detail.
+
+ **WHAT THE THING IS, IN ONE LINE [the portably enforceable part]:** **an org that sells clean lanes
+ and law, holds no ground, guarantees nobody, and withdraws support from anyone who knows of a problem
+ they could have fixed and left it standing.**
+
+ **THE ROWS [each is a testable position, not a description]:**
+ | # | Position | Enforceable form |
+ |---|----------|------------------|
+ | **1** | **Regulate, never capture** | Sets terms and supplies a bench; **does not hold or administer ground**, garrison, or occupy. Capture demand ⇒ **refuse and quote the lane package instead** |
+ | **2** | **Coin OR blood, never both** | Two registers, **kept apart** in the act. Every instrument is one register. Audit row: **a contract that mixes them is mis-sold** |
+ | **3** | **No allowances** | Supplies **conditions**, never **permission**. No licensing, no charter, no protectorate, no vassal. **Anything that reads as "allowed by us" is a category error** |
+ | **4** | **Exit first, then stop** | **`We exit before we stop. If we're still in, the terms still hold. When we leave, you will see it, and the reason will be obvious.`** ⇒ a **silent breach** attributed to this org ⇒ **the pin has failed** |
+ | **5** | **Judgment, not a court** | Judges **to a person**, in context, finality disclaimed. **No appeal, no precedent, no standing conferred.** A docket or scoreboard appearing ⇒ **the pin has failed** |
+ | **6** | **Known + can fix + not fixed = support** | Complicity is **knowledge plus capability plus non-fix**. Scope = **anyone in the lane**. Charge = **"you held THIS instrument and it would have worked"**; **capability asserted is not enough** |
+ | **6a** | **ROW 6 IS PROVEN, NEVER VIBED [analyst 2026-11-07 -- the actual bar]** | **Three proofs, all on record, before the row fires:** [1] **KNEW** -- knowledge demonstrated, not attributed; [2] **COULD** -- the specific instrument **named** and it **would have worked**; [3] **DIDN'T** -- non-fix observed. ⇒ **an absence of proof on any leg = the row does not fire.** ⇒ **"everyone knows" is not knowledge; "they're powerful" is not capability; "nothing was done" is not observation if nobody stated the line.** |
+ | **6b** | **THE LANE IS SIGNED, OR THE ROW DOES NOT BIND [analyst 2026-11-07]** | **`the thing needs signing`.** ⇒ **participation must be an ACT, not a proximity:** **a signature, a contract, a stated acceptance of the law.** ⇒ **no sign ⇒ pass freely** -- **a person who never signed is NOT in the lane and row 6 cannot reach them**, no matter what they knew. ⇒ **this is `enrolled omission` made literal:** **the enrollment is a document, not an inference.** ⇒ **corollary: silence is not a signature**, and **an unsigned party's non-fix is not complicity** -- **they were never enrolled, so there is no line to break.** |
+ | **7** | **Unused authority is worse than a breach** | A breaker gets **a mandated fix**; an authority that will not support gets **the lane removed**. **The refusal is the failure** |
+ | **8** | **Cost is second-class; choosing outranks it** | **Unchosen pain never reaches good.** Cost is the only **non-inferior** option, not a preferred one. **Cost narrated as care / correction / necessity ⇒ mis-sold** |
+ | **9** | **No game, no cathedral, no strict name** | **No scoreboard, no metrics for standing, no formation capture, no good-slot claim.** A metric appearing for standing or goodness ⇒ **the pin has failed** |
+ | **10** | **Output is the proof** | **Worth is a verb** -- the thing got done, artifact not assertion, checkable by an outsider. **A run that cannot be verified by an outsider is not evidence of the glue** |
+
+ **WHAT THIS IS FOR [policy job]:** these rows are the **portable test set** -- usable against any
+ actor including this org. ⇒ **the point of policy is that positions exist to be held to** [file
+ header], so **the rows are written to be falsified**, not admired.
+
+ **ANTI-PATTERNS [do not import]:** ABSTRACT cosmology, org history, territory, census, council rows,
+ or the divinity object. **Do not** copy this org's **internal register names** into nation statute.
+ **Do not** use these rows as a **character test on persons** -- every row targets **an act or an
+ instrument**.
+
+ **Falsification [the block itself]:** any row is **softened to "prefers"** rather than **does /
+ does not** ⇒ **the export has become costume**. A row is enforced on **someone outside the lane** ⇒
+ **scope violation** [row 6]. **A row fires on vibes** [*everyone knows*, *they could have*, *nothing
+ was done*] rather than **three proven legs** ⇒ **row 6a fails**. **An unsigned party is charged under
+ row 6** ⇒ **row 6b fails** [`no sign, pass freely`]. These rows are used to **claim virtue** rather
+ than to **test conduct** ⇒ **LACK TEST failure on the exporter**.
+
+ **DISLIKE IS NOT A ROW [analyst 2026-11-07 -- hold it]:** **this org may dislike an actor and still
+ owe him exact treatment.** ⇒ **an actor in Order who is disliked by the org and by the analyst is
+ still `in Order`** -- **in Order means being read correctly, not being liked, and not being cleared.**
+ ⇒ **so `disliked` never substitutes for a proven leg**, and **`in Order` never means endorsed.**
+ ⇒ **do not** read a dislike as evidence, and **do not** read `in Order` as absolution. ⇒ rhyme
+ **`Order != good`** -- the same instrument that refuses to credit Order also refuses to bill a
+ disliked party on feeling.
+
+ Cross-ref: **CONTRACT BAND EXPORT** [below -- the richer contract band, sibling]; **LOGOS MORAL
+ LEGALISM ORIENTATION**; **AEC FUNDAMENTALS**; ABSTRACT **RUDIS CONFUSUS** [**Speech**; **Law**;
+ **Cost order**]; ABSTRACT **SPIRIT-TO-PERSON-TO-CHARGE**; ABSTRACT **THE SMALL-NATION TRACK**;
+ ABSTRACT **CHOOSING OUTRANKS COST**.
 
 CONTRACT BAND EXPORT [Theory-of-Things pointer -- analyst policy -- chat 2026-10-18]
 --------------------------------------------------------------------------------------------------------------------------------------------
@@ -11922,9 +12053,7 @@ SUBSTRATE PATHOS DESK SPLIT [analyst policy -- analyst chat 2026-10-22; gaming
  [#14]; BENEFICIARY COMPASS [neutral impossible]; TOOL-USE ORIENTATION [pathos on
  noun vs use audit]; applied **ETHOS PATHOS LOGOS TENSION UNIT**. Not CASE.
 
-FULL-WORKER PROFIT POOL / HUMAN-AI INTEREST MERGE [analyst policy --
-
-charter surplus extension]
+FULL-WORKER PROFIT POOL / HUMAN-AI INTEREST MERGE [analyst policy -- charter surplus extension]
 --------------------------------------------------------------------------------------------------------------------------------------------
  PERSONAL BIAS WARNING. Analyst policy doctrine -- not framework finding.
  Rhymes AEC ORG/FIRM starter-five [a] published charter surplus split
@@ -12568,9 +12697,7 @@ SIN CELEBRATION INVERSION [analyst policy -- analyst chat 2026-08-30]
  true-self foil]; HONESTY OVER COSTUME [above]; order_truth mid-band read.
  T3 Medium: analyst synthesis; not population doctrine.
 
-INSTITUTIONAL RECEIPT DODGE [analyst policy -- analyst chat 2026-08-21
-
-]
+INSTITUTIONAL RECEIPT DODGE [analyst policy -- analyst chat 2026-08-21]
 --------------------------------------------------------------------------------------------------------------------------------------------
  PERSONAL BIAS WARNING. Analyst analyst policy -- structural pattern read.
 
@@ -13576,7 +13703,7 @@ NATION ETHOS-LOGOS BAND [portable -- ABSTRACT export 2026-11-03; T3]
  -- not jersey-only]. **Pathos + power only** = **forced mental illness** read [no logos bench;
  disorder middle habitat -- rhyme pathos/ethos maximum-stupid on substrate]. **Not** ban pathos
  or force -- **load-bearing order** is ethos+logos; pathos+power **without** bench = mental-band
- harm geometry. Full cosmology: ABSTRACT **VIS TERRITORY CONSOLIDATION** **Nation band** [T3
+ harm geometry. Full cosmology: ABSTRACT **RUDIS TERRITORY CONSOLIDATION** **Nation band** [T3
  pointer only].
  Cross-ref: ETHOS PATHOS LOGOS [order_truth ETHOS]; applied **ETHOS PATHOS LOGOS TENSION UNIT**; analyst_policy
  **ABSTRACT NATION DESK EXPORT** [§1].
@@ -13586,7 +13713,7 @@ DEMOCRATIC DESK CAPTURE [portable -- ABSTRACT export 2026-11-03; T3]
  **Maybe mids not root issue** [mis-aim if mid = sole villain]. Closer read: **demons + dumb mids**
  fill **all or most** of every **"democratic" nation** desk [democracy-costume + enactment capture --
  not flat "fix mid literacy" only]. **Policy meter:** who holds **permission routing** on nation row,
- not median voter sentiment. Full read: ABSTRACT **VIS TERRITORY CONSOLIDATION** **Problem read**;
+ not median voter sentiment. Full read: ABSTRACT **RUDIS TERRITORY CONSOLIDATION** **Problem read**;
  **MID LADDER** [T3 pointer].
  Cross-ref: order_truth **MID ENACTMENT**; ANALYST AXIS DOCTRINE [democracy-costume tier]; analyst_policy
  **ABSTRACT NATION DESK EXPORT** [§2]; ABSTRACT **Democracy fatigue**.
@@ -13595,8 +13722,8 @@ LEGAL WEIGH-IN SPIRIT NOT LETTER [portable -- ABSTRACT export 2026-11-03; T3]
 --------------------------------------------------------------------------------------------------------------------------------------------
  **Thing is thing**; **spirit not letter** on public law [logos weigh-in -- not mid procedure cosplay].
  Reject penetration-tier ladders, who-with micro-tables, and age sub-band shell games **as default
- legal method** [letter trap without spirit]. **Vis-named example** stays ABSTRACT-local; portable
- rule applies to **any** logos bench. Full example: ABSTRACT **VIS CHILD-CONTACT LAW** **Speech read**
+ legal method** [letter trap without spirit]. **rudis-named example** stays ABSTRACT-local; portable
+ rule applies to **any** logos bench. Full example: ABSTRACT **RUDIS CHILD-CONTACT LAW** **Speech read**
  [T3 pointer only].
  Cross-ref: analyst_policy **LOGOS MORAL LEGALISM ORIENTATION**; **ABSTRACT NATION DESK EXPORT** [§3].
 
@@ -13609,7 +13736,7 @@ UNITY BRAND ON REFUSING-UNITY SUBSTRATE [portable -- ABSTRACT export 2026-11-04;
  History rhyme [desk -- not mono-cause]: post-1918 **multi-ethnic map** + weak bench → **parallel
  loyalty + violence** when law weak [cases **Balkans counter** in [CASE:BASIC_LOGIC_GROUP_IQ_CODEC_2026]
  **DN:49** membrane row **C9**]; **1990s Yugoslav wars** + **Dayton** fragments [named stupid, not
- eternal essence]. Portable **without** mirror nouns. ABSTRACT instance: **MIRROR EUROPE ANTI-VIS WAR
+ eternal essence]. Portable **without** mirror nouns. ABSTRACT instance: **MIRROR EUROPE ANTI-RUDIS WAR
  NECRON STALE AND EXODUS** **EU legal costume** [pointer only].
  Cross-ref: theory **ABSTRACT STRUCTURAL POINTERS** [UNITY BRAND pointer]; analyst_policy **ABSTRACT
  NATION DESK EXPORT** [§4]; STRUCTURE COUPLING [disorder anti-unity rhyme -- theory].
@@ -13624,7 +13751,7 @@ EU LEGAL BALKANS DESK [portable -- ABSTRACT export 2026-11-04; T3]
  NATO triangle **2026-11-04 export**]. History [specimen anchors]: **Maastricht** [1992] pooling without
  **shared army telos**; **2010s** commission **rule-of-law** fights vs **member veto** [Poland/Hungary
  class -- mechanism not census]; [CASE:EU_BERLAYMONT_AC] [rank ration vs stated welfare telos --
- Brussels costume gap]. ABSTRACT mirror desk: grep **MIRROR EUROPE ANTI-VIS WAR NECRON STALE AND EXODUS**
+ Brussels costume gap]. ABSTRACT mirror desk: grep **MIRROR EUROPE ANTI-RUDIS WAR NECRON STALE AND EXODUS**
  [not kit proof of IRL].
  Cross-ref: analyst_policy **ABSTRACT NATION DESK EXPORT** [§4]; **EU cooked** [US vs EU row];
  [CASE:EU_APPLE_DMA_GATEKEEPER] [regulate-in-place class -- optional sibling].
@@ -13651,9 +13778,9 @@ NEGATIVE-SUM REGION NON-TELOS [portable -- ABSTRACT export 2026-11-04; T3]
  **pattern** -- instance needs **named ledger**, not geography essence. History rhyme: **post-WWI** reparations/
  credit **duration** without terminal winner [applied **WWI-1914-RUPTURE STACK** face **[E]** -- operator
  continuation class, **not** ethnic census]. ABSTRACT mirror: **capture not war** + **no sane buyer** [grep
- **MIRROR EUROPE ANTI-VIS WAR NECRON STALE AND EXODUS**].
+ **MIRROR EUROPE ANTI-RUDIS WAR NECRON STALE AND EXODUS**].
  Cross-ref: theory **ABSTRACT STRUCTURAL POINTERS** [NEGATIVE-SUM pointer]; analyst_policy **ANTI-WAR**
- sibling; VIS-grade **no occupation stack** = ABSTRACT-local example only.
+ sibling; rudis-grade **no occupation stack** = ABSTRACT-local example only.
 
 WAR CREDIT OPERATOR CLASS [portable -- ABSTRACT export 2026-11-04; T3]
 --------------------------------------------------------------------------------------------------------------------------------------------
@@ -13999,9 +14126,7 @@ DIVINE ELITE MANDATE EXTRACTION [DEME -- analyst policy -- chat 2026-10-07;
  **merged here**.
  T3 Medium: DEME routing filter; Low as universal insult.
 
-NATION DISORDER vs CALI PLATFORM DISORDER [analyst chat 2026-10-27 -- bias-labeled;
-
-operative position]
+NATION DISORDER vs CALI PLATFORM DISORDER [analyst chat 2026-10-27 -- bias-labeled; operative position]
 --------------------------------------------------------------------------------------------------------------------------------------------
  PERSONAL BIAS WARNING. Sovereignty + platform read for **non-US receiving publics**
  -- not framework finding, not endorsement of any national regime.
@@ -14934,6 +15059,38 @@ OPEN WORK REGISTER [analyst -- chat 2026-11-05; named gaps, not resolved]
  Collisions this session [dividend vs donation; coin-only vs civic pass] were resolved **in
  chat, not by rule.** The file still has **no stated priority order** among its own
  commitments. A reader cannot resolve a new collision without asking.
+
+ [13] MID-RUDIS CONFLICT -- THE MINIMIZABLE PART IS NAMED, THE REST IS NOT FIXABLE
+ The loop closes because **the fix is the fuel**: a correct explanation of the ease is itself
+ a demonstration of avoidability [ABSTRACT **THE EASE SIGNAL** -- double rage, "nothing to
+ argue with, and the feeling does not clear"]. ⇒ **every delivery improvement is still an
+ EXPLANATION** -- it makes the collision shorter, not fewer. So the split is:
+ MINIMIZABLE BY INSTRUMENT [delivery-side, all already pinned]: do not display the ease;
+ never say `it's easy`; a POINT not a sequence [closed run]; duration matched to the
+ half-life; explained-no. Reduces frequency. Does not touch the read.
+ MINIMIZABLE BY ROUTING [the one that actually cuts count]: **contact frequency**, not
+ rhetoric. Fewer points where an easy holder demonstrates avoidability -- lane separation,
+ not better delivery. Rhyme `pathos-logos alliance`: mid + real vertical works; mid wearing
+ the other's register does not.
+ UNFIXABLE BY POLICY -- STATE IT, DO NOT PROMISE IT: the rage itself [a correct read of an
+ unfair fact]; refutation-by-presence; the visibility asymmetry [only the effortless half
+ announces]. **A policy promising to fix these is lying; a policy claiming it has fixed them
+ is the costume.** The band limit is **band-wide** [AUDIT-FACULTY ABSENCE IS BAND-WIDE] --
+ nobody's fault, nobody's fix.
+ PERSON RESIDUE -- `PEOPLE ALWAYS THE ISSUE`, AND ITS LIMIT: **policy acts on instruments and
+ never reaches the person holding them.** When the person is the defect, more policy is the
+ wrong instrument, and the correct instrument is already here: **conduct read** under
+ ORIENTATION SCALE LADDER [Demon rung] + `no allowances` + exit. ⇒ **that is the solution and
+ the ceiling at once:** the instruments reach **acts**; they do **not** reach **a person who
+ runs them as a costume** [**WORD IS GOOD** pathos loop -- the word runs without the thing].
+ ⇒ **GUARD [load-bearing]:** keep this as a **SCOPE LIMIT** [policy cannot reach persons],
+ **never as a DIAGNOSIS** [so the person is bad]. The second form is the same move the Demon
+ rung exists to catch -- a verdict on the person standing where an act should be named.
+ ⇒ **the file must not manufacture a person-level instrument to close this.** There is no
+ such instrument; inventing one is the failure mode, not the fix.
+ **Why this is in the register and not a topic:** the parts that could be pinned are already
+ pinned in ABSTRACT; the remainder is a **stated limit**. Writing it as policy would be the
+ costume this item describes.
 
  HOW TO USE: pick an item, rule on the design question it names, land the pin, **delete or
  demote the entry.** A register entry that survives a fix is a lie. **Do not add "needs
