@@ -66,7 +66,7 @@ BING_VERIFY = ""
 # by CI on every push, so a key file uploaded by hand would vanish on the next
 # deploy. Writing it from a constant in the builder makes it survive rebuilds.
 # The key is public by design — it lives at a public URL. It is not a secret.
-INDEXNOW_KEY = ""
+INDEXNOW_KEY = "7fc482195566ca3aa117113934b6b733"
 
 # Fallback lastmod when the source file's history is unknown.
 # Why this matters: mtime is NOT a publication date. A fresh `git clone` or a
@@ -840,6 +840,55 @@ def source_lastmod(filename):
     return LASTMOD_FALLBACK
 
 
+def parse_problem_clusters(md_lines):
+    """Parse INDEX.md '## Problem index by topic' into [(cluster name, [(phrase, target)])].
+
+    Extracted from main() 2026-11-07 so the cluster map is available BEFORE case
+    and topic pages are written. Cross-links from those pages back into the
+    problem clusters are what make the clusters crawlable: each problem page had
+    one real inbound link (the index), which is how a URL stays discovered but
+    uncrawled for weeks.
+    """
+    start = None
+    for i, l in enumerate(md_lines):
+        if l.startswith("## Problem index by topic"):
+            start = i
+            break
+    if not start:
+        return []
+    clusters, cur, rows = [], None, []
+    for l in md_lines[start + 1:]:
+        if l.startswith("## "):
+            break
+        m = re.match(r"^### (.+)$", l)
+        if m:
+            if cur:
+                clusters.append((cur, rows))
+            cur, rows = m.group(1).strip(), []
+        elif cur and l.startswith("|") and not re.match(r"^\|[\s\-:|]+\|$", l):
+            cells = [c.strip() for c in l.strip().strip("|").split("|")]
+            if len(cells) >= 2 and cells[0].lower() not in ("search phrases",):
+                rows.append((cells[0], cells[1]))
+    if cur:
+        clusters.append((cur, rows))
+    return clusters
+
+
+def index_for_problem(clusters, token):
+    """Cluster slug that a case/topic token belongs to, or None.
+
+    Matches against the ROUTING column (where the phrase lands), not the phrase
+    column: the routing column names the kit home, which is what a case page or
+    topic page can be identified by.
+    """
+    tok = token.lower()
+    for name, rows in clusters:
+        for _phrase, target in rows:
+            if tok in target.lower():
+                return slugify(name)
+    return None
+
+
 def crumb_html(parts):
     bits = []
     for label, path in parts:
@@ -875,6 +924,18 @@ def main():
     sitemap = []          # (path, lastmod)
     search_idx = []       # (title, path, kind)
     problems_nav = []
+
+    # Parse INDEX.md clusters up front so case and topic pages can link back
+    # into them. Previously the parse happened after those pages were already
+    # written, so every problem cluster had exactly one inbound internal link.
+    clusters = []
+    index_path = os.path.join(ROOT, "INDEX.md")
+    if os.path.isfile(index_path):
+        with open(index_path, encoding="utf-8") as f:
+            clusters = parse_problem_clusters(f.read().splitlines())
+    cluster_slug = {name: slugify(name) for name, _ in clusters}
+    cluster_title = {name: name for name, _ in clusters}
+    slug_title = {slugify(name): name for name, _ in clusters}
 
     # Lastmod for the generated/navigation pages below, which have no kit source
     # of their own. Derived from INDEX.md, the file those pages are built from,
@@ -922,13 +983,32 @@ def main():
                                  "url": f"{ORIGIN}{href('')}"},
                     "license": "https://creativecommons.org/publicdomain/zero/1.0/",
                 }
+                # Cross-link into the problem cluster this case appears in, so the
+                # cluster is reachable from every page that mentions it instead of
+                # only from /problems/index.html. One link per cluster, deduped.
+                back = []
+                seen_cl = set()
+                for cid in CASE_ANY.findall(text):
+                    cl = index_for_problem(clusters, cid)
+                    if cl and cl not in seen_cl:
+                        seen_cl.add(cl)
+                        back.append(cl)
+                    if len(back) >= 2:
+                        break
+                back_html = "".join(
+                    f' · <a href="{href("problems/" + cl + ".html")}">'
+                    f'{html.escape(slug_title.get(cl, cl))}</a>'
+                    for cl in back
+                )
                 body_html = (
                     f'<h1>{html.escape(title)}</h1>'
                     f'<div class="meta"><span class="pill">{kind}</span>'
                     f'CASE ID <code>{html.escape(cid)}</code></div>'
                     f'<pre class="kit">{html.escape(redact(text))}</pre>'
                     f'<p><a href="{href(subdir + "/index.html")}">All {kind}s</a> · '
-                    f'<a href="{href("read/beginner.html")}">Start here</a></p>'
+                    f'<a href="{href("read/beginner.html")}">Start here</a>'
+                    + f'{back_html}'
+                    + f'</p>'
                 )
                 crumb = crumb_html([("Home", ""),
                                     (kind + "s", subdir + "/index.html"),
@@ -1001,13 +1081,21 @@ def main():
             # reader; the plain title is an addition, not a substitution.
             internal = ("" if shown == title else
                         f'<span class="pill">{html.escape(title)}</span>')
+            # Cross-link into a problem cluster when this topic is a routing
+            # target in INDEX.md. Same reason as case pages: without this the
+            # cluster is reachable only from /problems/index.html.
+            tcl = index_for_problem(clusters, title)
+            tback = (f' · <a href="{href("problems/" + tcl + ".html")}">'
+                     f'{html.escape(slug_title.get(tcl, tcl))}</a>' if tcl else "")
             body_html = (
                 f'<h1>{html.escape(shown)}</h1>'
                 f'<div class="meta">{internal}<span class="pill">{html.escape(label)}</span>'
                 f'<a href="{href(file_page(stem))}">full file</a></div>'
                 f'<pre class="kit">{html.escape(redact(text))}</pre>'
                 f'<p><a href="{href(subdir + "/index.html")}">More {html.escape(label)}</a> · '
-                f'<a href="{href("read/beginner.html")}">Start here</a></p>'
+                f'<a href="{href("read/beginner.html")}">Start here</a>'
+                + tback
+                + f'</p>'
             )
             crumb = crumb_html([("Home", ""), (label, f"{subdir}/index.html"),
                                 (shown[:60], None)])
@@ -1060,33 +1148,8 @@ def main():
         search_idx.append((f"{label} — full contents", file_page(stem), "file"))
 
     # ---- problems (from INDEX.md clusters)
-    index_path = os.path.join(ROOT, "INDEX.md")
-    clusters = []
-    if os.path.isfile(index_path):
-        with open(index_path, encoding="utf-8") as f:
-            md = f.read().splitlines()
-        start = None
-        for i, l in enumerate(md):
-            if l.startswith("## Problem index by topic"):
-                start = i
-                break
-        if start:
-            cur, rows = None, []
-            for l in md[start + 1:]:
-                if l.startswith("## "):
-                    break
-                m = re.match(r"^### (.+)$", l)
-                if m:
-                    if cur:
-                        clusters.append((cur, rows))
-                    cur, rows = m.group(1).strip(), []
-                elif cur and l.startswith("|") and not re.match(r"^\|[\s\-:|]+\|$", l):
-                    cells = [c.strip() for c in l.strip().strip("|").split("|")]
-                    if len(cells) >= 2 and cells[0].lower() not in ("search phrases",):
-                        rows.append((cells[0], cells[1]))
-            if cur:
-                clusters.append((cur, rows))
-
+    # `clusters` was parsed at the top of main() so case and topic pages could
+    # already cross-link into them.
     case_lookup = {c[5]: c[3] for c in all_cases if c[0] == "cases"}
     case_title = {c[5]: c[2] for c in all_cases if c[0] == "cases"}
 
