@@ -27,6 +27,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          # Full history is required, not a convenience. build_site.py derives
+          # each page's sitemap <lastmod> from `git log -1 --format=%cs` on the
+          # source .txt. With the default fetch-depth: 1 every file's "last
+          # commit" is HEAD, so all 1851 URLs would claim they changed on build
+          # day, every day — the exact false signal that teaches a crawler to
+          # distrust lastmod. Shallow clone = silently broken dates.
+          fetch-depth: 0
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
