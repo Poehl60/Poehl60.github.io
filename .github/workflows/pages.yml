@@ -46,13 +46,16 @@ jobs:
       - uses: actions/configure-pages@v5
 
       - name: Build
-        # SITE_BASE selects the deploy shape [analyst 2026-11-06]:
-        #   repo is Poehl60.github.io   -> BASE=""          -> https://poehl60.github.io/
-        #   repo is Framework            -> BASE="/Framework" -> https://poehl60.github.io/Framework/
-        # Derived from the repo name so a fork or rename cannot silently emit
-        # canonicals and sitemap URLs pointing at the wrong host path.
+        # SITE_BASE selects the deploy shape. The builder defaults to "" (root
+        # site, https://poehl60.github.io/) because this repo is now named
+        # Poehl60.github.io. Only override for a project-path deploy:
+        #     SITE_BASE=/Framework python3 ...
+        # Do NOT derive this from the repo name with `cond && '' || x` —
+        # GitHub Actions treats "" as falsy, so an empty-string branch is
+        # unreachable and the expression silently picks the fallback
+        # [bug found 2026-11-06]. An explicit literal is unambiguous.
         env:
-          SITE_BASE: ${{ github.event.repository.name == 'Poehl60.github.io' && '' || '/Framework' }}
+          SITE_BASE: ""
         run: python3 "${{ steps.find.outputs.path }}"
 
       - name: Social card
